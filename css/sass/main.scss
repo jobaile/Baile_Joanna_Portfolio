@@ -1,2 +1,9 @@
-@import '_vars';
-@import '_global';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato');
+
+@import 'base/_vars';
+@import 'base/_global';
+
+@import 'components/_navbar';
+@import 'components/_particles';
+
+@import 'pages/_landing';
