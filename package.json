@@ -1,0 +1,34 @@
+{
+  "name": "baile_joanna_portfolio",
+  "version": "1.0.0",
+  "description": "Joanna's Portfolio 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobaile/Baile_Joanna_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "fanshawe",
+    "project"
+  ],
+  "author": "Joanna Baile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobaile/Baile_Joanna_Portfolio/issues"
+  },
+  "homepage": "https://github.com/jobaile/Baile_Joanna_Portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0"
+  },
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
