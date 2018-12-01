@@ -13,12 +13,11 @@ html {
 
 body {
     margin: 0;
-    background-color: set-color('off-white');
+    background-color: $white;
     padding: 0;
     text-rendering: optimizeLegibility;
     line-height: rem-calc(30);
-    color: set-color('grey-700');
-    font-family: $secondary-font;
+    color: $black;
     font-size: rem-calc(16);
     font-weight: 200;
     -webkit-font-smoothing: antialiased;
@@ -74,7 +73,11 @@ img {
 hr {
     margin-bottom: rem-calc(50);
     border-width: 1px 0 0;
-    border-color: rgba(set-color('white'), 0.2);
+    border-color: rgba(255,255,255, 0.2);
     width: rem-calc(200);
-    color: set-color('grey-500');
+    color: $white;
+}
+
+.yellow {
+    color: $yellow;
 }

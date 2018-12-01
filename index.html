@@ -7,12 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+    <!--Particle.JS Animation-->
+    <div id="particles-js"></div>
+    <!--Particle.JS Animation End-->
+
+    <!--Navigation-->
+    <div class="topLogo">
+        <img src="images/logo-white.png" alt="JB icon logo">
+    </div>
+        <nav class="menu-toggle">
+            <div class="strokes"></div>
+            <div class="strokes"></div>
+            <div class="strokes"></div>
+        </nav> <!--This is for the toggle-->
+    </div>
+    <div class="menu-overlay"> <!--This is the actual menu overlay-->
+        <div class="stroke-hover">
+            <ul id="navMenu">  <!--Menu-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="navSocial">  <!--Social Links-->
+            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+        </ul>
+    </div>
+    <!--Navigation End-->
+
+    <!--Text-->
+    <div class="landing-text">
+        <h1>Hello, I'm <span class="yellow">Joanna.</span></h1>
+        <h2>Web Developer & Designer.</h2>
+
+        <a href="about.html">LEARN MORE ABOUT ME <i class="fas fa-angle-right"></i></a>
+    <!--Text End-->
+
+    <!--Footer-->
+    <footer id="footerLanding">
+        <ul id="landingSocial">
+            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+        </ul>
+        <p>Made with love.<br>
+        Copyright 2018. Joanna Baile</p>
+    </footer>
+    <!--Footer End-->
+    </div>
 
     <!--JAVASCRIPT HERE-->
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
+    <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/main.js"></script> <!--Main Javascript-->
+    
 
 </body>
 </html>
