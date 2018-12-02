@@ -1,11 +1,11 @@
 (() => {
     //Hamburger Menu Toggle
-    var strokes = document.querySelectorAll(".strokes"),
-        hamburger = document.querySelector(".menu-toggle"),
+    var hamburger = document.querySelector(".menu-toggle"),
         menuOverlay = document.querySelector(".menu-overlay");
   
     function transformStart() {
         //console.log("from transformStart()");
+        var strokes = document.querySelectorAll(".strokes");
 
         strokes[0].classList.toggle("animate0")
         strokes[1].classList.toggle("hide");

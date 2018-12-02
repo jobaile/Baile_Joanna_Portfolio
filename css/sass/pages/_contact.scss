@@ -1,0 +1,30 @@
+#contactCon {
+    background-color: $grey;
+    z-index: 2;
+    clear: both;
+    width: 100%;
+    padding: 2em;
+}
+
+#contactCon h2 {
+    text-transform: uppercase;
+}
+#contactText {
+    color: $black;
+}
+
+#contactText h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.page-title {
+    padding-top: 60px;
+    clear: both;
+}
+
+.page-title h1 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 3em;
+}

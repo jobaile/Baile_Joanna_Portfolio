@@ -1,0 +1,51 @@
+//Landing Footer
+#footerLanding {
+    margin-top: 90px;
+}
+
+ul#landingSocial {
+    display: inline;
+  }
+
+#landingSocial li {
+    display: inline;
+    margin-left: 25px;
+    padding-left: 20px;
+  }
+  
+#landingSocial img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+#landingSocial a {
+    padding: 0;
+}
+
+
+//Rest of the pages footer
+footer#footerPages {
+    padding: 1em 1em 1em 0em;
+    background-color: $black;
+}
+
+#footerPages p {
+    color: $white;
+}
+
+ul#footerSocial {
+    display: inline;
+  }
+
+#footerSocial li {
+    display: inline;
+    margin-left: 25px;
+    padding-left: 20px;
+  }
+  
+#footerSocial img {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
