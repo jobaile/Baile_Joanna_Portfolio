@@ -6,17 +6,8 @@
     box-sizing: inherit;
 }
 
-html {
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    background-color: $white;
     padding: 0;
-    text-rendering: optimizeLegibility;
-    line-height: rem-calc(30);
     color: $black;
     font-size: rem-calc(16);
     font-weight: 200;

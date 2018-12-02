@@ -2,8 +2,14 @@
 
 @import 'base/_vars';
 @import 'base/_global';
+@import 'base/_mixins';
 
 @import 'components/_navbar';
 @import 'components/_particles';
+@import 'components/_form';
+@import 'components/_footer';
+
 
 @import 'pages/_landing';
+@import 'pages/_contact';
+

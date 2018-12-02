@@ -1,0 +1,82 @@
+@import '../base/_mixins';
+
+#contactText {
+    padding: 1em 3em 0 3em;
+}
+
+#contactForm {
+    padding: 1em;
+}
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 1px auto;
+}
+
+form input, form textarea {
+    @include border-radius(5px);
+    border: 0;
+    padding: 1em;
+    display: block;
+    width: 90%;
+    margin-top: 1em;
+    font-family: $secondary-font;
+    font-size: 1em;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    background-color: $yellow;
+    border: 1px solid black;
+}
+
+form input:focus, form textarea:focus {
+    @include box-shadow(0 0px 2px $yellow !important);
+}
+
+form #input-submit {
+  color: white;
+  background: $black;
+  cursor: pointer;
+}
+
+form #input-submit:hover {
+    background-color: red;
+    @include box-shadow(0 1px 1px 1px rgba(170,170,170,0.6));
+}
+
+form textarea {
+  height: 200px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
