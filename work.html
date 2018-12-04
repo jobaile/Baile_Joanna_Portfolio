@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
 <body>
     <!--Particle.JS Animation-->
     <div class="hero">
@@ -50,74 +52,42 @@
 <div class="container-flex">
     <!--Page Title-->
     <div class="page-title">
-        <h1>About Me</h1>
+        <h1>My Work</h1>
     </div>
     <!--Page Title End-->
 
-    <!--ContentStarts Here-->
-    <div id="aboutIntro">
-        <p>I’m from the Greater Toronto Area studying in London, 
-            Ontario to be a web developer. I’m into a lot of 
-            different things and one day want to climb Mount 
-            Everest even though I’m terrified of heights.<br>
-
-            I want to be a part of projects that I can be proud 
-            of, while being a part of an amazing team to help 
-            further my career in development. Take some time 
-            to look at my work and if you’re interested in helping 
-            me make my dream happen, let’s get in touch.</p>
+    <!--Portfolio-->
+    <div id="portfolio">
         <button>My Reel</button>
         <button>Resume</button>
-        <img src="images/jo-self.png">
     </div>
 
-    <!--What I Offer-->
-    <div id="aboutOffer">
-    <h1>What I Offer</h1>
-        <ul>
-            <li>
-                <img src="">
-                <h2>Web Development</h2>
-                <p>Enter Some Text Here</p>
-            </li>
-            <li>
-                <img src="">
-                <h2>Web Development</h2>
-                <p>Enter Some Text Here</p>
-            </li>
-            <li>
-                <img src="">
-                <h2>Web Development</h2>
-                <p>Enter Some Text Here</p>
-            </li>
-            <li>
-                <img src="">
-                <h2>Web Development</h2>
-                <p>Enter Some Text Here</p>
-            </li>
-        </ul>
-    </div>
+    <main id="app"> <!--VUE JS STARTS HERE-->
+        <div class="overlay-image">
+            <ul>
+                <li>
+                    <img class="image" src="images/" alt="portfolio">
+                    <div class="hover">
+                        <p class="text">{{ worktitle }}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
 
-    <!--Skillset-->
-    <div id="aboutSkills">
-        <h1>My Skillset</h1>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
+    <!--Lightbox-->
+    <div id="lightbox">
+        <span class="closeBtn">&times;</span>
+        <div id="lbImage">
+            <ul>
+                <li><img src="images/"></li>
+            </ul>
+        </div>
+        <div id="lbText">
+            <h3>Title</h3>
+            <p>Description</p>
+        </div>
     </div>
-
-    <!--Testimonial-->
-    <div id="testimonials">
-        <h1>Testimonials</h1>
-        <p>Enter some text here</p>
-        <h3>Name & Title</h3>
-    </div>
-    <!--CONTACT TEXT-->
-    <!--CONTACT TEXT END-->
-
-    <!--FORM-->
-    <!--FORM END HERE-->
 
     <!--FOOTER-->
     <footer id="footerPages">

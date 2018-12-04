@@ -7,3 +7,8 @@ $yellow: #FDD953;
 //Font
 $primary-font: 'Josefin Sans', sans-serif;
 $secondary-font: 'Lato', sans-serif;
+
+//Global
+.selected {
+    text-decoration: line-through;
+}
