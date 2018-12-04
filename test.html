@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joanna Baile | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+ 
+    <main id="app">
+
+        <div @mouseover="loadWork = true" @mouseleave="loadWork = false" >
+    <h2> Something Something </h2>
+    <p v-show="loadWork"> {{ worktitle }} </p>
+     </div>
+
+        <div class="overlay-image">
+        <ul>
+            <li v-for="tbl_work in portdata"> <!-- fetches the database stuff -->
+                 <a :href="tbl_work.work_url" v-on:hover="loadWork">
+                    <img :src="'images/work/'  + tbl_work.work_thumb" alt="movie poster">
+                </a>
+
+            </li>
+        </ul>
+        </div>
+
+        <section :class="{ 'show-movie' : showDetails }">
+                <div class="hover">
+                        <p class="text">{{ worktitle }}</p>
+                </div>
+            <h3 class="movie-title"> {{ videotitle }}</h3>
+            <div class="movie-details">
+                <p> {{ videodescription }} </p>
+                <p>Is this working?</p>
+            </div>
+        </section>
+    </main>
+
+    <!--JAVASCRIPT HERE-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
+    <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/app.js"></script> <!--Main Javascript-->
+    
+
+</body>
+</html>
