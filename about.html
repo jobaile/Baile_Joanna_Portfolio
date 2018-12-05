@@ -34,9 +34,9 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="about.html" class="selected">About</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about" class="selected">About</a></li>
+                <li><a href="work">My Work</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
@@ -55,56 +55,67 @@
     <!--Page Title End-->
 
     <!--ContentStarts Here-->
-    <div id="aboutIntro">
-        <p>I’m from the Greater Toronto Area studying in London, 
-            Ontario to be a web developer. I’m into a lot of 
-            different things and one day want to climb Mount 
-            Everest even though I’m terrified of heights.<br>
+    <div class="row" id="aboutIntro">
+        <div class="col-12 col-md-5 offset-md-2">
+            <p>I’m from the Greater Toronto Area studying in London, 
+                Ontario to be a web developer. I’m into a lot of 
+                different things and one day want to climb Mount 
+                Everest even though I’m terrified of heights.</p>
 
-            I want to be a part of projects that I can be proud 
-            of, while being a part of an amazing team to help 
-            further my career in development. Take some time 
-            to look at my work and if you’re interested in helping 
-            me make my dream happen, let’s get in touch.</p>
-        <button>My Reel</button>
-        <button>Resume</button>
-        <img src="images/jo-self.png">
+            <p>I want to be a part of projects that I can be proud 
+                of, while being a part of an amazing team to help 
+                further my career in development. Take some time 
+                to look at my work and if you’re interested in helping 
+                me make my dream happen, let’s get in touch.</p>
+                
+            <div class="button">
+                <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Reel</a>
+                <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="images/jo-self.png">
+        </div>
+    </div>
     </div>
 
     <!--What I Offer-->
     <div id="aboutOffer">
-    <h1>What I Offer</h1>
-        <ul>
-            <li>
+    <h1 class="text-center">What I Offer</h1>
+        <ul class="row">
+            <li class="col-12 col-md-5 col-lg-3">
                 <img src="">
-                <h2>Web Development</h2>
+                <h3>Web Development</h3>
                 <p>Enter Some Text Here</p>
             </li>
-            <li>
+            <li class="col-12 col-md-5 col-lg-3">
                 <img src="">
-                <h2>Web Development</h2>
+                <h3>UX/UI Design</h3>
                 <p>Enter Some Text Here</p>
             </li>
-            <li>
+            <li class="col-12 col-md-5 col-lg-3">
                 <img src="">
-                <h2>Web Development</h2>
+                <h3>Social Media Marketing</h3>
                 <p>Enter Some Text Here</p>
             </li>
-            <li>
+            <li class="col-12 col-md-5 col-lg-3">
                 <img src="">
-                <h2>Web Development</h2>
+                <h3>A Killer Playlist</h3>
                 <p>Enter Some Text Here</p>
             </li>
         </ul>
+        <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Work</a>
     </div>
 
     <!--Skillset-->
     <div id="aboutSkills">
-        <h1>My Skillset</h1>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
-        <p>Skillset1</p>
+        <h1 class="text-center">My Skillset</h1>
+            <ul id="skill">
+                <li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
+                <li><span class="bar html-css"></span><h3>Html // Css</h3></li>
+                <li><span class="bar jquery"></span><h3>jQuery // MoTools</h3></li>
+                <li><span class="bar wordpress"></span><h3>Wordpress</h3></li>
+            </ul>
     </div>
 
     <!--Testimonial-->

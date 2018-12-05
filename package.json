@@ -26,7 +26,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sass-lint": "^1.4.0"
+    "gulp-sass-lint": "^1.4.0",
+    "lightgallery.js": "^1.1.2"
   },
   "dependencies": {
     "npm": "^6.4.1"

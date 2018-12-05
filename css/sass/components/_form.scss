@@ -1,9 +1,5 @@
 @import '../base/_mixins';
 
-#contactText {
-    padding: 1em 3em 0 3em;
-}
-
 #contactForm {
     padding: 1em;
 }
@@ -23,7 +19,7 @@ form input, form textarea {
     font-family: $secondary-font;
     font-size: 1em;
     @include box-shadow(0 1px 1px rgba(black, 0.1));
-    background-color: $yellow;
+    background-color: $white;
     border: 1px solid black;
 }
 
@@ -48,16 +44,12 @@ form textarea {
 
 .half {
   float: left;
-  width: 48%;
+  width: 46%;
   margin-bottom: 1em;
 }
 
 .right {
-  width: 50%;
-}
-
-.left {
-  margin-right: 2%;
+  width: 48%;
 }
 
 @media (max-width: 480px) {

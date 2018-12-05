@@ -3,8 +3,11 @@
         el: '#app',
 
         data: {
-                upHere : false,
-
+            lightbox : GLightbox(),
+            lightboxDescription : GLightbox({
+              selector: 'glightbox2'
+            }),
+            
             welcomemessage : "Howdy! Welcome to my video app!",
             
             portdata : [], //this gets the array

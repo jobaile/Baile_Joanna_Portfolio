@@ -1,9 +1,9 @@
 div.landing-text{
     width: 100%;
     margin-top: 3em;
-    padding-top: 50%;
+    padding-top: 30%;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     display: block;
   }
 
@@ -11,30 +11,39 @@ div.landing-text h1 {
     text-align: center;
     color: $white;
     text-transform: uppercase;
-    font-style: $primary-font;
+    font-family: $primary-font;
 }
 
 div.landing-text h2 {
     text-align: center;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 2.5em;
     width: 300px;
     color: $white;
     margin: 0 auto;
     padding-bottom: 50px;
+    font-family: $secondary-font;
 }
 
 div.landing-text a {
-    padding-left: 7em;
+    text-align: center;
     text-decoration: none;
     color: $white;
     text-shadow: 2px 2px 8px rgba(99, 85, 21, 0.74);
+    font-family: $secondary-font;
+    font-weight: bold;
+}
+
+div.landing-text a:hover {
+    color: $yellow;
 }
 
 div.landing-text p {
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;
     color: $white;
+    font-family: $secondary-font;
+    font-size: 1em;
 }
 
 i {
@@ -44,3 +53,27 @@ i {
 .fas {
     color: $white;
 }
+
+@media screen and (min-width: 768px) {
+    div.landing-text{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.landing-text{
+        padding-top: 10%;
+    }
+
+    div.landing-text p {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    div.landing-text{
+        margin-top: 3em;
+        padding-top: 10%;
+    }
+}
+

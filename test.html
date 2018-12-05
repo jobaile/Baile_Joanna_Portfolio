@@ -11,23 +11,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/baguettebox.js">
+    <script src="http://jsdelivr.com/projects/baguettebox.js" async></script>
 </head>
 <body>
- 
-    <main id="app">
 
-        <div @mouseover="loadWork = true" @mouseleave="loadWork = false" >
-    <h2> Something Something </h2>
-    <p v-show="loadWork"> {{ worktitle }} </p>
-     </div>
+    <div class="gallery">
+        <a href="images/email.svg" data-caption="Image caption">
+            <img src="images/work/getreal.jpg" alt="First image">
+        </a>
+        <a href="images/email.svg">
+            <img src="images/work/getreal.jpg" alt="Second image">
+        </a>
+    </div>
+
+    <main id="app">
 
         <div class="overlay-image">
         <ul>
             <li v-for="tbl_work in portdata"> <!-- fetches the database stuff -->
-                 <a :href="tbl_work.work_url" v-on:hover="loadWork">
                     <img :src="'images/work/'  + tbl_work.work_thumb" alt="movie poster">
                 </a>
-
+                <div class="hover" @mouseover="loadWork">
+                        <p class="text">{{ worktitle }}</p>
+                </div>
             </li>
         </ul>
         </div>
@@ -45,10 +53,11 @@
     </main>
 
     <!--JAVASCRIPT HERE-->
+    <script src="js/main.js"></script> <!--Main Javascript-->
+    <script src="node_modules/lightgallery.js/src/js/lightgallery.js"></script> <!--LIGHT GALLERY JAVASCRIPT-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
-    <script src="js/particles.js"></script> <!--Particles JS (stars)-->
-    <script src="js/app.js"></script> <!--Main Javascript-->
-    
+    <script src="js/particles.js"></script> <!--Particles JS (stars) edit-->
+    <script src="js/app.js"></script> <!--Vue Javascript-->
 
 </body>
 </html>

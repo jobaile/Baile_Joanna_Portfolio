@@ -18,21 +18,27 @@
     <!--Particle.JS Animation End-->
 
     <!--Navigation-->
-    <div class="topLogo">
-        <img src="images/logo-white.png" alt="JB icon logo">
+    <div class="navMenu">
+        <div class="topLogo">
+            <a href="#">
+                <img src="images/logo-white.png" alt="JB icon logo">
+            </a>
+        </div>
+        <div class="col-12">
+            <nav class="menu-toggle">
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+            </nav> <!--This is for the toggle-->
+        </div>
     </div>
-        <nav class="menu-toggle">
-            <div class="strokes"></div>
-            <div class="strokes"></div>
-            <div class="strokes"></div>
-        </nav> <!--This is for the toggle-->
-    </div>
+
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about" class="selected">About</a></li>
+                <li><a href="work">My Work</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
@@ -48,7 +54,9 @@
         <h1>Hello, I'm <span class="yellow">Joanna.</span></h1>
         <h2>Web Developer & Designer.</h2>
 
-        <a href="about.html">LEARN MORE ABOUT ME <i class="fas fa-angle-right"></i></a>
+        <div class="text-center">
+                <a href="about">LEARN MORE ABOUT ME <i class="fas fa-angle-right"></i></a>
+        </div>
     <!--Text End-->
 
     <!--Footer-->
