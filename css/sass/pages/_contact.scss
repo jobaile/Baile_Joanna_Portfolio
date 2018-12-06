@@ -17,7 +17,7 @@
     background-color: $yellow;
     z-index: 2;
     clear: both;
-    width: 110%;
+    width: 115%;
     padding: 2em 1em 0 3em;
 }
 
@@ -39,4 +39,21 @@
 
 #contactForm {
     padding: 0 0 2em 0;
+}
+
+@media screen and (min-width: 425px) {
+    #contactCon {
+        padding: 5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #contactText {
+        color: $black;
+        padding: 1em 2em 0em 5em;
+    }
+
+    #contactForm {
+        padding: 0 3em 0 1em;
+    }
 }

@@ -1,18 +1,19 @@
 .btn-effect {
-    color: #fff !important;
+    color: $black !important;
     text-transform: uppercase;
-    background: $black;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 2px;
     display: inline-block;
     border: none;
     width: 200px;
     text-align: center;
+    border: 1px solid $black;
+    margin: 0 0 1em 5.5em;
+    background: rgba(0,0,0,0.1)
     }
 
 .btn-effect:hover {
     @include text-shadow;
     transition: all 0.2s ease;
     text-decoration: none;
-    background: #000000;
     }

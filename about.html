@@ -34,7 +34,7 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="about" class="selected">About</a></li>
+                <li><a href="about" class="active">About</a></li>
                 <li><a href="work">My Work</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
@@ -73,7 +73,7 @@
                 <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
             </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
             <img src="images/jo-self.png">
         </div>
     </div>
@@ -104,19 +104,59 @@
                 <p>Enter Some Text Here</p>
             </li>
         </ul>
-        <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Work</a>
+        <div class="button">
+            <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Work</a>
+        </div>
     </div>
 
     <!--Skillset-->
     <div id="aboutSkills">
-        <h1 class="text-center">My Skillset</h1>
-            <ul id="skill">
-                <li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
-                <li><span class="bar html-css"></span><h3>Html // Css</h3></li>
-                <li><span class="bar jquery"></span><h3>jQuery // MoTools</h3></li>
-                <li><span class="bar wordpress"></span><h3>Wordpress</h3></li>
-            </ul>
-    </div>
+        <h2 class="text-center">My Skills</h2>
+        <div class="skillbar-wrapper">
+            <div class="skillbar clearfix html5" data-percent="80%">
+                <h4 class="skillbar-title"><span>HTML5</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+            
+            <div class="skillbar clearfix css" data-percent="80%">
+                <h4 class="skillbar-title"><span>CSS</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+            
+            <div class="skillbar clearfix javascript" data-percent="70%">
+                <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            
+            <div class="skillbar clearfix jquery" data-percent="75%">
+                <h4 class="skillbar-title"><span>Photoshop</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">75%</div>
+            </div>
+            
+            <div class="skillbar clearfix php" data-percent="60%">
+                <h4 class="skillbar-title"><span>PHP</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">60%</div>
+            </div>
+            
+            <div class="skillbar clearfix wordpress" data-percent="70%">
+                <h4 class="skillbar-title"><span>WordPress</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            
+            <div class="skillbar clearfix server" data-percent="80%">
+                <h4 class="skillbar-title"><span>Github</span></h4>
+                <div class="skillbar-bar"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+        </div>
+    </div>	
+        
 
     <!--Testimonial-->
     <div id="testimonials">
@@ -131,14 +171,19 @@
     <!--FORM END HERE-->
 
     <!--FOOTER-->
-    <footer id="footerPages">
-        <ul id="footerSocial">
-            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
-        </ul>
-        <p>Made with love.<br>
-        Copyright 2018. Joanna Baile</p>
+    <footer id="footerLanding">
+        <div class="row">
+            <div class="col-12 col-md-4" id="bottomSocial">
+                <ul>
+                    <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8" id="footerText">
+                <p>Made with love. &copy; 2018 Joanna Baile.</p>  
+            </div>
+        </div>
     </footer>
     <!--FOOTER END-->
 </div>
@@ -148,6 +193,7 @@
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/skill.js"></script> <!--Main Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
 
