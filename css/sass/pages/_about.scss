@@ -12,9 +12,14 @@
 #aboutSkills {
     background-color: $white;
     overflow: hidden;
+    padding: 1em;
 }
 
 #testimonials {
     background-color: $yellow;
     overflow: hidden;
+}
+
+#aboutIntro p {
+    margin-top: 2em;
 }

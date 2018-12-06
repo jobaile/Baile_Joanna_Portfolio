@@ -1,7 +1,4 @@
 //Landing Footer
-#footerLanding {
-    margin-top: 90px;
-}
 
 ul#landingSocial {
     display: inline;
@@ -9,9 +6,9 @@ ul#landingSocial {
 
 #landingSocial li {
     display: inline;
-    margin-left: 25px;
-    padding-left: 20px;
-  }
+    margin-left: 1em;
+    padding-left: 5px;
+}
   
 #landingSocial img {
     width: 50px;
@@ -21,6 +18,103 @@ ul#landingSocial {
 
 #landingSocial a {
     padding: 0;
+}
+
+#bottomSocial {
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+#footerText{
+    text-align: center;
+    color: $white;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 375px) {
+    ul#landingSocial {
+        padding: 4em;
+    }
+
+    #bottomSocial {
+        margin-left: 6em;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    ul#landingSocial {
+        padding: 6em;
+    }
+
+    div#bottomSocial {
+        margin:0;
+    }
+
+    #footerText{
+        float:right;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    ul#landingSocial {
+        padding-left: 10em;
+    }  
+    
+    #bottomSocial {
+        margin-left: 13em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #footerLanding {
+        margin-top: 2em;
+    }
+
+    ul#landingSocial {
+        padding-left: 16.5em;
+    }
+}
+
+@media screen and (min-width: 888px) {
+    ul#landingSocial {
+        padding-left: 20em;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    ul#landingSocial {
+        padding-left: 23em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    ul#landingSocial {
+        padding-left: 25em;
+    }
+
+    #footerText p {
+        margin-left: 32em;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1430px) {
+    ul#landingSocial {
+        padding-left: 32em;
+    }
+}
+
+@media screen and (min-width: 1435px) {
+    ul#landingSocial {
+        padding-left: 37em;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    ul#landingSocial {
+        padding-left: 38em;
+    }
 }
 
 
@@ -37,15 +131,26 @@ footer#footerPages {
 ul#footerSocial {
     display: inline;
   }
-
-#footerSocial li {
-    display: inline;
-    margin-left: 25px;
-    padding-left: 20px;
-  }
   
 #footerSocial img {
     width: 50px;
     padding: 0;
     margin: 0;
   }
+
+
+#bottomSocial {
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#bottomSocial img {
+    width: 30px;
+}
+
+
+#footerText{
+    color: $white;
+    margin-bottom: 1.5em;
+}

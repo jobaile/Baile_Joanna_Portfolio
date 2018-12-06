@@ -1,4 +1,5 @@
 (() => {
+    
     //Hamburger Menu Toggle
     var hamburger = document.querySelector(".menu-toggle"),
         menuOverlay = document.querySelector(".menu-overlay");

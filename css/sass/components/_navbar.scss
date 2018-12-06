@@ -8,13 +8,12 @@ body {
 
 div.topLogo{
   width: 60px;
-  padding: 1em;
   float: left;
-  margin: 1em;
+  margin: 2em;
   position: relative;
   cursor: pointer;
   display: block;
-  z-index: 998;
+  z-index: 999;
 }
 
 nav.menu-toggle{
@@ -22,7 +21,7 @@ nav.menu-toggle{
     height: 40px;
     padding: 10px 12px 0 0px;
     float: right;
-    margin: 30px 30px 0 10px;
+    margin: 30px 10px 0 10px;
     position: relative;
     cursor: pointer;
     z-index: 999;
@@ -50,11 +49,11 @@ nav.menu-toggle div.strokes {
 }
 
 .menu-overlay{
-    background-color: rgba(52, 152, 219, 0);
+    background-color: rgba(58, 58, 58, 0.644);
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     position: absolute;
     display: none;
     -webkit-transition: $transitionOne;
@@ -62,12 +61,13 @@ nav.menu-toggle div.strokes {
     -ms-transition: $transitionOne;
     -o-transition: $transitionOne;
     transition: $transitionOne;
-    text-align: center
+    text-align: center;
+    padding-right: 10px;
 }
 
 .menu-overlay.show{
     display: block;
-    background-color: rgba(52, 152, 219, 0.9);
+    background-color: $black;
     -webkit-transition: $transitionTwo;
     -moz-transition: $transitionTwo;
     -ms-transition: $transitionTwo;
@@ -76,9 +76,11 @@ nav.menu-toggle div.strokes {
     z-index: 998;
 }
 
-.menu-overlay ul{
-    padding-top: 40%;
-    list-style-type: none;
+
+.menu-overlay ul {
+  padding: 5em 5em 0 5em;
+  list-style-type: none;
+  margin-top: 7em;
 }
 
 .menu-overlay li {
@@ -89,19 +91,16 @@ nav.menu-toggle div.strokes {
     visibility: inherit;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2em;   
+    font-size: 2.5em;   
     text-decoration: none;
-    font-weight: 100;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 150%;
 }
 
-.selected {
-  text-decoration: line-through;
-}
-
 //Nav Hover
 .menu-overlay ul li a {
+  margin: 10em;
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -112,43 +111,101 @@ nav.menu-toggle div.strokes {
 .menu-overlay ul li a,
 .menu-overlay ul li a:after,
 .menu-overlay ul li a:before {
-  transition: all .5s;
+  transition: all .2s;
 }
 .menu-overlay ul li a:hover {
   color: $white;
 }
 
 
-/* stroke */
-div.stroke-hover ul li a { 
-  position: relative;
-}
-div.stroke-hover ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: $white;
-  height: 1px;
+div.stroke-hover ul li a:hover {
+  text-decoration: line-through;
+  color: $yellow;
 }
 
-div.stroke-hover ul li a:hover:after {
-  width: 50%;
-}
+
 
 //Social
+ul#navSocial {
+  margin: 0;
+  padding: 0;
+}
+
 #navSocial li {
   display: inline-block;
 }
 
 #navSocial img {
-  width: 50px;
+  width: 40px;
 }
 
-section {
-  width: 100%;
+.menu-overlay ul li {
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-overlay{
+    top: 0;
+    left: 65%;
+    width: 40%;
+    text-align: left;
+    box-shadow: 0 0 3px 0 $white;
+  }
+
+  ul#navMenu {
+    padding: 1em 0 0 1.5em;
+  }
+  
+  ul#navSocial {
+    padding-left: 30px;
+  }
+  
+  ul#navSocial img {
+    width: 30px;
+  }
+
+  div.stroke-hover ul li a:after {
+    right: 120px;
+    width: 0%;
+  }
+  
+  div.stroke-hover ul li a:hover:after {
+    width: 60%;
+  }
+
+  div#bottomSocial {
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-overlay{
+    top: 0;
+    left: 70%;
+    width: 40%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  ul#navMenu {
+    padding-left: 30px;
+  }
+  .menu-overlay ul {
+    padding-left: 20px;
+  }
+
+  div#bottomSocial {
+    margin-top: 0;
+}
+}
+
+@media screen and (min-width: 1300px) {
+  .menu-overlay{
+    top: 0;
+    left: 80%;
+    width: 30%;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
