@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joanna Baile | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+    <!--Particle.JS Animation-->
+    <div class="hero">
+        <div id="particles-js"></div>
+    </div>
+    <!--Particle.JS Animation End-->
+
+    <!--Navigation-->
+    <div class="navMenu">
+        <div class="topLogo">
+            <a href="#">
+                <img src="images/logo-white.png" alt="JB icon logo">
+            </a>
+        </div>
+        <div class="col-12">
+            <nav class="menu-toggle">
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+            </nav> <!--This is for the toggle-->
+        </div>
+    </div>
+
+    <div class="menu-overlay"> <!--This is the actual menu overlay-->
+        <div class="stroke-hover">
+            <ul id="navMenu">  <!--Menu-->
+                <li><a href="about" class="selected">About</a></li>
+                <li><a href="work">My Work</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="navSocial">  <!--Social Links-->
+            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+        </ul>
+    </div>
+    <!--Navigation End-->
+
+    <!--Page Title-->
+<div id="app"> <!--VUE JS START-->
+
+    <section class="page-title">
+        <h1 class="text-center">My Work</h1>
+    </section>
+    <!--Page Title End-->
+<div id="app">
+    <!--Content Starts Here-->
+    <div class="container-flex">
+        <div class="portfolioCon">
+            <h1 class="text-center">{{ pageTitleOne }}</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-1">
+                    <img v-bind:src="'images/work/'+ sosImgOne">
+                </div>
+                <div class="col-12 col-lg-4 offset-lg-1">
+                    <h2 class="text-center"> {{ sosCategory }} </h2>
+                    <h3 class="text-center"> {{ sosDate }}</h3>
+                    <p> {{ sosAbout }} </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-1 order-lg-2">
+                    <img src="images/work/fimssc.jpg">
+                </div>
+                <div class="col-12 col-lg-4 offset-lg-1 order-lg-1">
+                    <p> {{ sosDesc }} </p>
+                </div>
+            </div>
+
+            <div class="button">
+                <a href="https://studentsofferingsupport.ca/" target="_blank" class="btn-effect" rel="nofollow noopener">Visit</a>
+            </div>
+
+            <div class="moreInfo">
+                <h4>More Examples</h4>
+                <div class="row">
+                    <ul>
+                        <li><img src="images/web.svg"></li>
+                        <li><img src="images/web.svg"></li>
+                        <li><img src="images/web.svg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Content Ends Here-->
+
+</div> <!--VUE JS END-->
+
+    <!--FOOTER-->
+    <footer id="footerLanding">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-2 offset-md-0" id="bottomSocial">
+                <ul>
+                    <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8 offset-md-0" id="footerText">
+                <p>Made with love. &copy; 2018 Joanna Baile.</p>  
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+    <!--Content Ends Here-->
+
+
+    <!--JAVASCRIPT HERE-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
+    <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/main.js"></script> <!--Main Javascript-->
+    <script src="js/vue.js"></script> <!--Main Javascript-->
+
+    
+
+</body>
+</html>
