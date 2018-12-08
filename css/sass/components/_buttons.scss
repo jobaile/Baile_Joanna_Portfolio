@@ -9,11 +9,12 @@
     text-align: center;
     border: 1px solid $black;
     margin: 0 0 1em 5.5em;
-    background: rgba(0,0,0,0.1)
     }
 
 .btn-effect:hover {
     @include text-shadow;
     transition: all 0.2s ease;
     text-decoration: none;
+    background: $black;
+    color: $white !important;
     }

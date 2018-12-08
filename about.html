@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
 <body>
     <!--Particle.JS Animation-->
     <div class="hero">
@@ -40,14 +42,15 @@
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
-            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+            <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
 
-<div class="container-flex">
+    <div class="container-flex">
+
     <!--Page Title-->
     <div class="page-title">
         <h1>About Me</h1>
@@ -55,7 +58,11 @@
     <!--Page Title End-->
 
     <!--ContentStarts Here-->
+    <div id="app">
+
     <div class="row" id="aboutIntro">
+            <h2>Joanna Baile</h2>
+            <h3>Developer and Designer</h3>
         <div class="col-12 col-md-5 offset-md-2">
             <p>I’m from the Greater Toronto Area studying in London, 
                 Ontario to be a web developer. I’m into a lot of 
@@ -77,29 +84,28 @@
             <img src="images/jo-self.png">
         </div>
     </div>
-    </div>
 
     <!--What I Offer-->
     <div id="aboutOffer">
-    <h1 class="text-center">What I Offer</h1>
+    <h1 class="text-center">{{ message }}</h1>
         <ul class="row">
             <li class="col-12 col-md-5 col-lg-3">
-                <img src="">
+                <img src="images/web.svg">
                 <h3>Web Development</h3>
                 <p>Enter Some Text Here</p>
             </li>
             <li class="col-12 col-md-5 col-lg-3">
-                <img src="">
+                <img src="images/design.svg">
                 <h3>UX/UI Design</h3>
                 <p>Enter Some Text Here</p>
             </li>
             <li class="col-12 col-md-5 col-lg-3">
-                <img src="">
+                <img src="images/marketing.svg">
                 <h3>Social Media Marketing</h3>
                 <p>Enter Some Text Here</p>
             </li>
             <li class="col-12 col-md-5 col-lg-3">
-                <img src="">
+                <img src="images/playlist.svg">
                 <h3>A Killer Playlist</h3>
                 <p>Enter Some Text Here</p>
             </li>
@@ -164,20 +170,17 @@
         <p>Enter some text here</p>
         <h3>Name & Title</h3>
     </div>
-    <!--CONTACT TEXT-->
-    <!--CONTACT TEXT END-->
-
-    <!--FORM-->
-    <!--FORM END HERE-->
+    <!--Testimonial End-->
+    </div>
 
     <!--FOOTER-->
     <footer id="footerLanding">
         <div class="row">
             <div class="col-12 col-md-4" id="bottomSocial">
                 <ul>
-                    <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-                    <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
