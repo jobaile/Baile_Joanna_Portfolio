@@ -3,72 +3,78 @@
         el: '#app',
 
         data: {
-            lightbox : GLightbox(),
-            lightboxDescription : GLightbox({
-              selector: 'glightbox2'
-            }),
-            
-            welcomemessage : "Howdy! Welcome to my video app!",
-            
-            portdata : [], //this gets the array
-            singledata : [],
+            workdata : [], //grabs the work array
 
-            workcategory : "",
+            worktitle : "", //grabs work title
+            workdesc : "", //grabs work description 
 
-            videotitle : "",
-            videodescription : "",
-            videsources : "",
+            workimg : "", //grabs work image1
+            workurl : "", //grabs the url
 
-            showDetails : false
+            showDetails : false //because we have the lightbox setup, this needs to be set to false
         },
 
+
         created : function(){
-            //this witll fetch the data during page load
+            //this will fetch the data during page load
             this.fetchPortfolioData(null);
         },
 
         methods : {
-            login() {
-                //stub
-                console.log('login functionality');
+            openLightBox(e){
+                //console.log('from openlightbox');
+
+                var modal = document.querySelector(".lightBox");
+
+                modal.style.display = "block";
             },
 
-            fetchSingle(e) {
-                //debugger;
-                this.fetchPortfolioData(e.currentTarget.dataset.port);
+            closeLightBox(){
+                //console.log('from closeLightBox vue');
+                
+                var modal = document.querySelector(".lightBox");
+
+                modal.style.display = "none";
             },
 
-            loadWork(e) {
+            loadPortfolio(e) {
                 //debugger;
+                //console.log("from loadPortfolio");
                 e.preventDefault(); // block a page reload (anchor tag default behaviour
 
                 dataKey = e.currentTarget.getAttribute('href');
-                currentData = this.portdata.filter(tbl_work => tbl_work.work_url === dataKey);
+                currentData = this.workdata.filter(tbl_portfolio => tbl_portfolio.port_url === dataKey);
 
-                this.workcategory = currentData[0].work_desc;
-                this.videotitle = currentData[0].work_title;
-                this.videosource = dataKey;
+                this.worktitle = currentData[0].port_title;
+                this.workdesc = currentData[0].port_desc;
+
+                this.workimg = currentData[0].port_img;
+                this.workurl = currentData[0].port_url;
 
                 this.showDetails = true;
-
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500)
             },
 
-            fetchPortfolioData(port) {
-                //this is a ternary statement (shorthand for if/else). left of the : is true, right is false
-                let url = port ? `./includes/index.php?port=${port}` : './includes/index.php';
+            loadSite(e) { //This makes it so the button will go to the respective page site
+                //debugger;
+                //console.log("from loadSite");
+                dataKey = e.currentTarget.getAttribute('href');
+                currentData = this.workdata.filter(tbl_portfolio => tbl_portfolio.port_url === dataKey);
+            },
+
+            fetchPortfolioData(work) {
+                //console.log("from fetchPortfolioata");
+                let url = work ? `./includes/index.php?work=${work}` : './includes/index.php';
 
                 fetch(url) // pass in the one or many query
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
 
-                    if (port) {
-                        // this fetches one work
+                    if (work) {
                         this.singledata = data; //this is gonna go to the data
                     } else {
-                        // this will push all the portfolio content
-                        this.portdata = data;
+                        // this will push all the content
+                        this.workdata = data;
                     }
                 })
                 .catch(function(error) {

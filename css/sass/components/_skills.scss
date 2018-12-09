@@ -1,7 +1,6 @@
 /*= Skills */
-
 .skillbar-wrapper {
-	margin: 1.5em auto;
+	margin: 2em auto;
 	max-width: 960px;
 }
 
@@ -9,19 +8,18 @@
 	position:relative;
 	margin-bottom: 15px;
 	width: 100%;
-	background: #eee;
-	height: 35px;
+	background: $grey;
+	height: 30px;
 	border-radius: 3px;	
 }
 
 .skillbar-title {
 	position:absolute;
-	top:0;
-	left:0;
 	width:110px;
+	font-family: $secondary-font;
 	font-weight: bold;
 	font-size: 13px;
-	color: #fff;
+	color: $white;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 	margin: 0;
@@ -31,17 +29,17 @@
 	display: block;
 	background: rgba(0, 0, 0, 0.1);
 	padding: 0 20px;
-	height:35px;
-	line-height: 35px;
+	height:30px;
+	line-height: 30px;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
 }
 
 .skillbar-bar {
-	height: 35px;
+	height: 30px;
 	width: 0%;
 	border-radius: 3px;
-	transition: 500ms linear;
+	transition: 200ms ease-in;
 	transition-property: width, background-color;
 }
 
@@ -50,10 +48,10 @@
 	right: 10px;
 	top: 0;
 	font-size: 11px;
-	height: 35px;
-	line-height: 35px;
+	height: 30px;
+	line-height: 30px;
 	color: rgba( 0, 0, 0, 0.4 );
-	transition: color 500ms ease-out;
+	transition: color 400ms ease-in;
 }
 
 .complete .skill-bar-percent {

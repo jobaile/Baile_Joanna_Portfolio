@@ -56,36 +56,55 @@
     </div>
     <!--Page Title End-->
 
-    <!--Portfolio-->
-    <div id="portfolio">
-        <button>My Reel</button>
-        <button>Resume</button>
-    </div>
+      <!--Vue JS container-->
+      <main id="app">
 
-    <main id="app"> <!--VUE JS STARTS HERE-->
-        <div class="overlay-image">
-            <ul>
-                <li>
-                    <img class="image" src="images/" alt="portfolio">
-                    <div class="hover">
-                        <p class="text">{{ worktitle }}</p>
-                    </div>
-                </li>
-            </ul>
+      <div class="lightBox" :class="{ 'show-portfolio' : showDetails }">
+        <span id="closeBtn" @click="closeLightBox">&times;</span>
+          <div class="row">
+            <div class="col-12 col-md-8">
+                <img :src="'images/work/' + workimg" alt="work image large">
+            </div>
+            <div class="col-12 col-md-4">
+                <h3 class="car-part text-center"> {{ worktitle }}</h3>
+                <p> {{ workdesc}} </p>
+                
+                <a :href="workurl" v-on:click="loadSite">
+                  <button>More Info</button>
+                </a>
+            </div>
+          </div>
+      </div>
+
+        <div class="portfolioSelection">
+          <ul>
+            <li v-for="tbl_portfolio in workdata"> <!-- fetches the database stuff -->
+              <a :href="tbl_portfolio.port_url" v-on:click="loadPortfolio" @click="openLightBox">
+                  <img :src="'images/work/'  + tbl_portfolio.port_img" alt="work image thumb"> <!--Debug this-->
+              </a>
+            </li>
+          </ul>
         </div>
-    </main>
+
+      </main>
+      <!--Vue JS container end-->
 
     <!--Lightbox-->
     <div id="lightbox">
         <span class="closeBtn">&times;</span>
-        <div id="lbImage">
-            <ul>
-                <li><img src="images/"></li>
-            </ul>
-        </div>
-        <div id="lbText">
-            <h3>Title</h3>
-            <p>Description</p>
+        <div class="vidPlayer">
+        <video id="headerVid" poster="images/video-poster.jpeg" alt="promotional video">
+            <source src="video/desktop.mp4" type="video/mp4"/>
+                Your browser does not support the video files! Please try another browser.
+            </video>
+        
+            <div id="vidControls">
+            <button id="rewind"><i class="fas fa-step-backward"></i></button>
+            <button id="playPause"><i class="fas fa-play"></i></button>
+            <input type="range" id="seek-bar" class="slider" value="0">
+            <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
+            <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></button></div>
+            </div>
         </div>
     </div>
 
@@ -107,6 +126,7 @@
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/app.js"></script> <!--Vue Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
 

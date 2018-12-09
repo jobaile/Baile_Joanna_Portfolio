@@ -1,9 +1,12 @@
 <?php
     include 'functions.php';
 
-    if (isset($_GET['id'])) {
-        $query = $conn->prepare('SELECT * FROM tbl_portfolio WHERE port_id = ?');
-        $query->execute([$_GET['id']]);
+    if (isset($_GET['testimonial'])) {
+        $data = get_testimonials($conn, $_GET["testimonial"]);
+        echo json_encode($data);
+    } else {
+        $data = get_all_testimonials($conn);
+        echo json_encode($data);
     }
 
     //returns the portfolio work
@@ -23,12 +26,4 @@
         echo json_encode($data);
     }
 
-    $rows = array();
-    while ($row = $query->fetch() ) {
-        $rows[] = $row;
-    }
-
-
-header('Content-Type: application/json; charset=UTF-8');
-echo json_encode($rows);
 ?>
