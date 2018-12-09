@@ -79,13 +79,32 @@
                 me make my dream happen, let’s get in touch.</p>
                 
             <div class="button">
-                <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Reel</a>
+                <a href="" target="_blank" class="btn-effect" id="reelBtn" rel="nofollow noopener">My Reel</a>
                 <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
             </div>
         </div>
         <div class="col-12 col-md-5 col-lg-3 offset-lg-1">
             <img src="images/jo-self.png">
         </div>
+
+        <div class="lightBox">
+                <span id="closeBtn" @click="closeLightBox">&times;</span>
+                <div class="vidPlayer">
+                    <video id="headerVid" poster="images/video-poster.jpeg" alt="promotional video">
+                        <source src="video/desktop.mp4" type="video/mp4"/>
+                            Your browser does not support the video files! Please try another browser.
+                        </video>
+                    
+                        <div id="vidControls">
+                        <button id="rewind"><i class="fas fa-step-backward"></i></button>
+                        <button id="playPause"><i class="fas fa-play"></i></button>
+                        <input type="range" id="seek-bar" class="slider" value="0">
+                        <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
+                        <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></button>
+                    </div>
+                </div>    
+        </div>
+
     </div>
 
     <!--What I Offer-->
@@ -116,43 +135,43 @@
     <div id="aboutSkills">
         <h2 class="text-center">My Skills</h2>
         <div class="skillbar-wrap">
-            <div class="skillbar clearfix html5" data-percent="80%">
+            <div class="skillbar clearfix" data-percent="80%">
                 <h4 class="skillbar-title"><span>HTML5</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">80%</div>
             </div>
             
-            <div class="skillbar clearfix css" data-percent="80%">
+            <div class="skillbar clearfix" data-percent="80%">
                 <h4 class="skillbar-title"><span>CSS/SASS</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">80%</div>
             </div>
             
-            <div class="skillbar clearfix javascript" data-percent="70%">
+            <div class="skillbar clearfix" data-percent="70%">
                 <h4 class="skillbar-title"><span>JavaScript</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">70%</div>
             </div>
             
-            <div class="skillbar clearfix psd" data-percent="75%">
+            <div class="skillbar clearfix" data-percent="75%">
                 <h4 class="skillbar-title"><span>Photoshop</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">75%</div>
             </div>
             
-            <div class="skillbar clearfix php" data-percent="60%">
+            <div class="skillbar clearfix" data-percent="60%">
                 <h4 class="skillbar-title"><span>PHP</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">60%</div>
             </div>
             
-            <div class="skillbar clearfix wordpress" data-percent="70%">
+            <div class="skillbar clearfix" data-percent="70%">
                 <h4 class="skillbar-title"><span>WordPress</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">70%</div>
             </div>
             
-            <div class="skillbar clearfix git" data-percent="80%">
+            <div class="skillbar clearfix" data-percent="80%">
                 <h4 class="skillbar-title"><span>Github</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">75%</div>

@@ -11,7 +11,6 @@
     var rewindVideo = document.querySelector("#rewind");
     var muteButton = document.querySelector("#muteVideo");
     var volumeBar = document.querySelector('#volumeBar');
-    var fullVideo = document.querySelector("#full-screen");
 
     //Escape key working for lightbox!!!   
     var modal = document.querySelector(".lightBox");
@@ -146,5 +145,6 @@
     document.addEventListener("DOMContentLoaded", skillNewBars); // skill bar
   
 
+    
 })();
 

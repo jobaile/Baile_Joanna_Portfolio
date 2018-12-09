@@ -28,14 +28,22 @@ form input:focus, form textarea:focus {
 }
 
 form #input-submit {
-  color: white;
-  background: $black;
-  cursor: pointer;
-}
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  border: 1px solid $black;
+  cursor: pointer;  
+  background-color: transparent;
+  }
 
 form #input-submit:hover {
-    background-color: red;
-    @include box-shadow(0 1px 1px 1px rgba(170,170,170,0.6));
+    background-color: $yellow;
+    @include text-shadow;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    background-color: $black;
+    color: $white !important;
 }
 
 form textarea {

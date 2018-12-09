@@ -1,15 +1,18 @@
 main {
     margin: 0;
 }
-#portfolio {
-    background-color: $white;
-    overflow: hidden;
-}
 
 .workSection {
     background-color: $white;
 }
 
+.workSection h2 {
+    color: $black;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em 1em 0 1em;
+}
 .workSection ul {
     padding: 0;
 }
@@ -45,4 +48,8 @@ main {
     .workSection ul {
         padding-left: 8em;
     }
+}
+
+#portfolioSection {
+    margin-top: 1em;
 }

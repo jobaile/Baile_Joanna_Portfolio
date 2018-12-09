@@ -32,6 +32,9 @@
                 var modal = document.querySelector(".lightBox");
 
                 modal.style.display = "block";
+
+                setTimeout(function(){ window.scrollTo(0, -200)}, 100)
+
             },
 
             closeLightBox(){
