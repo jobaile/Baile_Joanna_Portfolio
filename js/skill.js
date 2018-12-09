@@ -1,7 +1,7 @@
 (() => {
 
     function skillNew(){
-		var skills = new skillBarStart( ".skillbar-bar" );
+		var skills = new skillBarStart(".skillbar-bar");
     };
     
     var skillBarStart = function(bars) {
@@ -13,16 +13,16 @@
 	
 	skillBarStart.prototype = {
 		init: function() {
-			var self = this;
+			const self= this;
 			self.index = -1;
 			self.timer = setTimeout(function() {
 				self.action();
-			}, 500);
+			}, 400);
 			
 			
 		},
 		select: function( n ) {
-			var self = this,
+			const self= this,
 				bar = self.bars[n];
 				
 				if( bar ) {
@@ -33,7 +33,7 @@
 				}
 		},
 		action: function() {
-			var self = this;
+			const self= this;
 			self.index++;
 			if( self.index == self.bars.length ) {
 				clearTimeout( self.timer );
@@ -43,7 +43,7 @@
 			
 			setTimeout(function() {
 				self.action();
-			},500);
+			},400);
 		}
 	};
 	

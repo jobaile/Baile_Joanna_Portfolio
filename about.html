@@ -24,7 +24,7 @@
         <div class="topLogo">
             <img src="images/logo-white.png" alt="JB icon logo">
         </div>
-        <div class="col-12 col-lg-11">
+        <div class="col-11 col-md-12 col-lg-11">
             <nav class="menu-toggle">
                 <div class="strokes"></div>
                 <div class="strokes"></div>
@@ -43,9 +43,9 @@
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
-            <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
             <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
+            <li><a href="contact" target="_self"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
@@ -64,9 +64,9 @@
     <div class="row" id="aboutIntro">
         <div id="nameText">
             <h2>Joanna Baile</h2>
-            <h3>Developer and Designer</h3>
+            <p>Developer and Designer</p>
         </div>
-        <div class="col-12 col-md-5 offset-md-2" id="aboutText">
+        <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2" id="aboutText">
             <p>I’m from the Greater Toronto Area studying in London, 
                 Ontario to be a web developer. I’m into a lot of 
                 different things and one day want to climb Mount 
@@ -83,41 +83,39 @@
                 <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
             </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-5 col-lg-3 offset-lg-1">
             <img src="images/jo-self.png">
         </div>
     </div>
 
     <!--What I Offer-->
     <div id="aboutOffer">
-    <h1 class="text-center">What I Offer</h1>
+    <h2 class="text-center">What I Offer</h2>
         <ul class="row">
-            <li class="col-12 col-md-5 col-lg-3">
+            <li class="col-12 col-md-5 col-lg-2 offset-lg-2">
                 <img src="images/web.svg">
                 <h3>Web Development</h3>
             </li>
-            <li class="col-12 col-md-5 col-lg-3">
+            <li class="col-12 col-md-5 col-lg-2">
                 <img src="images/design.svg">
                 <h3>UX/UI Design</h3>
             </li>
-            <li class="col-12 col-md-5 col-lg-3">
+            <li class="col-12 col-md-5 col-lg-2">
                 <img src="images/marketing.svg">
                 <h3>Social Media Marketing</h3>
             </li>
-            <li class="col-12 col-md-5 col-lg-3">
+            <li class="col-12 col-md-5 col-lg-2">
                 <img src="images/playlist.svg">
                 <h3>A Killer Playlist</h3>
             </li>
         </ul>
-        <div class="button">
-            <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Work</a>
-        </div>
+            <a href="#" target="_self" class="btn-effect" id="workBtn">My Work</a>
     </div>
 
     <!--Skillset-->
     <div id="aboutSkills">
         <h2 class="text-center">My Skills</h2>
-        <div class="skillbar-wrapper">
+        <div class="skillbar-wrap">
             <div class="skillbar clearfix html5" data-percent="80%">
                 <h4 class="skillbar-title"><span>HTML5</span></h4>
                 <div class="skillbar-bar"></div>
@@ -136,7 +134,7 @@
                 <div class="skill-bar-percent">70%</div>
             </div>
             
-            <div class="skillbar clearfix jquery" data-percent="75%">
+            <div class="skillbar clearfix psd" data-percent="75%">
                 <h4 class="skillbar-title"><span>Photoshop</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">75%</div>
@@ -154,7 +152,7 @@
                 <div class="skill-bar-percent">70%</div>
             </div>
             
-            <div class="skillbar clearfix server" data-percent="80%">
+            <div class="skillbar clearfix git" data-percent="80%">
                 <h4 class="skillbar-title"><span>Github</span></h4>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">75%</div>
@@ -164,13 +162,10 @@
         
 
     <!--Testimonial-->
-    <main id="app">
-        <div id=progressbar></div>
-        <div id="testimonials">
-            <h1>Testimonials</h1>
-            <p>Enter some text here</p>
-            <h3>Name & Title</h3>
-        </div>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Enter some text here</p>
+        <h3>Name & Title</h3>
         <div id="testimPics">
             <ul>
                 <lI>
@@ -178,7 +173,7 @@
                 </lI>
             </ul>
         </div>
-    </main>
+    </section>
     <!--Testimonial End-->
     </div>
 
@@ -189,7 +184,7 @@
                 <ul>
                     <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
                     <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="contact"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
@@ -205,8 +200,8 @@
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
-    <script src="js/skill.js"></script> <!--Main Javascript-->
-    <script src="js/app.js"></script> <!--Main Javascript-->
+    <script src="js/app.js"></script> <!--VUE Javascript-->
+    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
 
