@@ -1,19 +1,13 @@
 <?php
-include 'connect.php';
+    include 'functions.php';
 
-    if (isset($_GET['id'])) {
-        $query = $conn->prepare('SELECT * FROM tbl_portfolio WHERE port_id = ?');
-        $query->execute([$_GET['id']]);
+    //single movie route
+    if (isset($_GET["work"])) {
+        $data = get_one_part($conn, $_GET["work"]);
+        echo json_encode($data);
+    } else {
+        $data = get_all_parts($conn);
+        echo json_encode($data);
     }
-
-    $rows = array();
-    while ($row = $query->fetch() ) {
-        $rows[] = $row;
-    }
-
-
-header('Content-Type: application/json; charset=UTF-8');
-echo json_encode($rows);
-
 
 ?>

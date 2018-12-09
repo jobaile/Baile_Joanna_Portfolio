@@ -15,6 +15,15 @@
 
     //Escape key working for lightbox!!!   
     var modal = document.querySelector(".lightBox");
+
+    document.addEventListener('keydown', function(esc) { //Esc key
+      let keyCode = esc.keyCode; 
+      //console.log("from esc key");
+
+      if (keyCode === 27) { //This is the integer for escape!
+          modal.style.display = "none";
+      }
+  });
     
   
     //For hamburger
@@ -91,14 +100,6 @@
     rewindVideo.addEventListener("click", rewindVid); //REWIND VIDEO X
     fullVideo.addEventListener("click", fullScreen); //FULLSCREEN
     video.addEventListener("timeupdate", progPlay); //TIME UPDATE
-    document.addEventListener('keydown', function(esc) { //Esc key
-      let keyCode = esc.keyCode; 
-      //console.log("from esc key");
-
-      if (keyCode === 27) { //This is the integer for escape!
-          modal.style.display = "none";
-      }
-  });
   
 
 })();
