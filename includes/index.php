@@ -1,7 +1,6 @@
 <?php
     include 'functions.php';
-
-    //single movie route
+    //returns the portfolio work
     if (isset($_GET["work"])) {
         $data = get_one_work($conn, $_GET["work"]);
         echo json_encode($data);
@@ -10,8 +9,5 @@
         echo json_encode($data);
     }
 
-    if (isset($_GET["testimonial"])) {
-        $data = get_($conn, $_GET["testimonial"]);
-        echo json_encode($data);
-    } 
+
 ?>
