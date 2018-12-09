@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <!--Particle.JS Animation-->
@@ -63,7 +65,7 @@
     <!--Content Starts Here-->
     <div class="container-flex">
 
-        <div class="projectCon"> <!--Project Container-->
+        <div class="projectCon" data-aos="fade-left"> <!--Project Container-->
             <div class="back-text">
                 <a href="projects">GO BACK <i class="fas fa-angle-left"></i></a>
             </div>
@@ -79,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="row" id="projectContent">
+            <div class="row" id="projectContent" data-aos="fade-right">
                 <div class="col-12 col-lg-6 order-lg-2">
                     <img v-bind:src="'images/work/'+ sosImgTwo">
                 </div>

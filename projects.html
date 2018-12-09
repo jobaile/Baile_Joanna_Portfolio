@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--Particle.JS Animation-->
@@ -58,8 +59,8 @@
 
       <!--Vue JS container-->
       <main id="app" class="workSection">
-        <h2 class="text-center">Check out my latest work</h2>
-        <p class="text-center">Click on an image to learn more information about the project</p>
+        <h2 class="text-center" data-aos="fade-right">Check out my latest work</h2>
+        <p class="text-center" data-aos="fade-right">Click on an image to learn more information about the project</p>
 
       <div class="lightBox" :class="{ 'show-portfolio' : showDetails }">
             <span id="closeBtn" @click="closeLightBox">&times;</span>
@@ -81,7 +82,7 @@
           </div>
       </div>
 
-        <div class="portfolioSelection">
+        <div class="portfolioSelection" data-aos="fade-out">
           <ul>
             <li v-for="tbl_portfolio in workdata"> <!-- fetches the database stuff -->
                 <a :href="tbl_portfolio.port_url" v-on:click="loadPortfolio" @click="openLightBox">
@@ -117,6 +118,8 @@
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script> <!--AOS-->
     <script src="js/app.js"></script> <!--Vue Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
