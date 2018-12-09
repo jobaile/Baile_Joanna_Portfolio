@@ -56,4 +56,21 @@
     #contactForm {
         padding: 0 3em 0 1em;
     }
+
+    .contact-link {
+        margin-top: 5em;
+    }
+}
+
+div.contact-link a {
+    text-align: center;
+    text-decoration: none;
+    color: #fcfcfc;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.74);
+    font-family: $secondary-font;
+    font-weight: bold;
+}
+
+div.contact-link a:hover {
+    color: $black;
 }

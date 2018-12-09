@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joanna Baile | Projects </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+    <!--Particle.JS Animation-->
+    <div class="hero">
+        <div id="particles-js"></div>
+    </div>
+    <!--Particle.JS Animation End-->
+
+    <!--Navigation-->
+    <div class="navMenu">
+        <div class="topLogo">
+            <img src="images/logo-white.png" alt="JB icon logo">
+        </div>
+        <div class="col-11 col-md-12 col-lg-11">
+            <nav class="menu-toggle">
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+                <div class="strokes"></div>
+            </nav> <!--This is for the toggle-->
+        </div>
+    </div>
+
+    <div class="menu-overlay"> <!--This is the actual menu overlay-->
+        <div class="stroke-hover">
+            <ul id="navMenu">  <!--Menu-->
+                <li><a href="index">Home</a></li>
+                <li><a href="about" class="active">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="navSocial">  <!--Social Links-->
+            <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
+        </ul>
+    </div>
+    <!--Navigation End-->
+
+    <div class="container-flex">
+
+    <!--Page Title-->
+    <div class="page-title">
+        <h1>Projects</h1>
+    </div>
+    <!--Page Title End-->
+
+    <!--ContentStarts Here-->
+    <div id="app">
+    <!--Content Starts Here-->
+    <div class="container-flex">
+
+        <div class="projectCon"> <!--Project Container-->
+            <div class="back-text">
+                <a href="projects">GO BACK <i class="fas fa-angle-left"></i></a>
+            </div>
+            <div class="row" id="projectHeader">
+                <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+                    <img v-bind:src="'images/work/'+ neroImgOne">
+                </div>
+                <div class="col-12 col-md-5">
+                    <h2> {{ pageTitleThre }} </h2>
+                    <h3> {{ neroCategory }} </h3>
+                    <h4> {{ neroDate }}</h4>
+                    <p> {{ neroAbout }} </p>
+                </div>
+            </div>
+
+            <div class="row" id="projectContent">
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <img v-bind:src="'images/work/'+ neroImgTwo">
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1">
+                        <h3 class="text-center">{{ roletitle }}</h3>
+                        <p> {{ neroDesc }} </p>
+                </div>
+                <div class="col-12 order-lg-3 offset-lg-5">
+                     <a href="#" target="_blank" class="btn-effect" id="projectbtn">Style Guide</a>
+                </div>
+            </div>
+        </div> <!--Project Container End-->
+    </div>
+    <!--Content Ends Here-->
+</div> <!--VUE JS END-->
+
+    <!--ContentEnds Here-->
+</div>
+
+    <!--FOOTER-->
+    <footer id="footerPages">
+        <div class="row">
+            <div class="col-12 col-md-4" id="bottomSocial">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8" id="footerText">
+                <p>Made with love. &copy; 2018 Joanna Baile.</p>  
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+</div>
+    <!--Content Ends Here-->
+
+
+    <!--JAVASCRIPT HERE-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
+    <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/app.js"></script> <!--VUE Javascript-->
+    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
+    <script src="js/main.js"></script> <!--Main Javascript-->
+    
+
+</body>
+</html>

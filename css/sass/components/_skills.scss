@@ -58,63 +58,19 @@
 	color:$black;
 }
 
+$complete: #333333;
+$orange: #d37000;
+$red: #d43227;
+
 .complete.server .skill-bar-percent {
-	color: #333;
+	color: $complete;
 }
 
-.html5 .skillbar-title {
-	background: #d35400;	
+.skillbar-title {
+	background: $black;	
 }
 
-.html5 .skillbar-bar {
-	background: #e67e22;	
-}
-
-
-.css .skillbar-title {
-	background: #2980b9;	
-}
-
-.css .skillbar-bar {
-	background: #3498db;	
-}
-
-.javascript .skillbar-title {
-	background: #fac552;
-}
-.javascript .skillbar-bar {
-	background: #f1ac18;
-}
-
-.psd .skillbar-title {
-	background: #2c3e50;	
-}
-
-.psd .skillbar-bar {
-	background: #2c3e50;	
-}
-
-.php .skillbar-title {
-	background: #46465e;	
-}
-
-.php .skillbar-bar {
-	background: #5a68a5;	
-}
-
-.wordpress .skillbar-title {
-	background: #333333;	
-}
-
-.wordpress .skillbar-bar {
-	background: #525252;	
-}
-
-.git .skillbar-title {
-	background: #5e2750;	
-}
-
-.git .skillbar-bar {
-	background: #d43227;	
+.skillbar-bar {
+	background: $red;	
 }
 

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Joanna Baile | Contact</title>
+    <title>Joanna Baile | Contact </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 <body>
     <!--Particle.JS Animation-->
     <div class="hero">
@@ -20,11 +21,9 @@
     <!--Navigation-->
     <div class="navMenu">
         <div class="topLogo">
-            <a href="#">
-                <img src="images/logo-white.png" alt="JB icon logo">
-            </a>
+            <img src="images/logo-white.png" alt="JB icon logo">
         </div>
-        <div class="col-12">
+        <div class="col-11 col-md-12 col-lg-11">
             <nav class="menu-toggle">
                 <div class="strokes"></div>
                 <div class="strokes"></div>
@@ -36,34 +35,43 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="about" class="selected">About</a></li>
-                <li><a href="work">My Work</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="about" class="active">About</a></li>
+                <li><a href="projects">Projects</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
-            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+            <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
 
+    <div class="container-flex">
+
     <!--Page Title-->
-    <section class="page-title">
-        <h1 class="text-center">Contact Me</h1>
-    </section>
+    <div class="page-title">
+        <h1>Contact Me</h1>
+    </div>
     <!--Page Title End-->
+
+    <!--ContentStarts Here-->
 
     <!--ContentStarts Here-->
     <!--CONTACT TEXT-->
     <div class="container-flex">
     <div id="contactCon">
         <div class="row">
-        <div id="contactText" class="col-12 col-md-5 col-lg-5">
+        <div id="contactText" class="col-12 col-md-5 col-lg-5 col-xl-4 offset-xl-1">
             <h2>Don't be a stranger.</h2>
-            <p>Let's work on a project together.</p>
-            <p>Check out my work!</p>
+            <p>I love meeting new people.
+            <br>Let's work on a project together.</p>
+
+            <div class="button">
+                <a href="work" target="_blank" class="btn-effect">My Work</a>
+            </div>
         </div>
     <!--CONTACT TEXT END-->
 
@@ -88,28 +96,33 @@
     </div>
 </div>
 
+    <!--ContentEnds here-->
+
     <!--FOOTER-->
-    <footer id="footerLanding">
+    <footer id="footerPages">
         <div class="row">
-            <div class="col-12 col-md-4 offset-2 offset-md-0" id="bottomSocial">
+            <div class="col-12 col-md-4" id="bottomSocial">
                 <ul>
-                    <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-                    <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
                     <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
-            <div class="col-12 col-md-8 offset-md-0" id="footerText">
+            <div class="col-12 col-md-8" id="footerText">
                 <p>Made with love. &copy; 2018 Joanna Baile.</p>  
             </div>
         </div>
     </footer>
     <!--FOOTER END-->
+</div>
     <!--Content Ends Here-->
 
 
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/app.js"></script> <!--VUE Javascript-->
+    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
 

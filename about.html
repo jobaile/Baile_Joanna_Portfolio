@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 </head>
 <body>
@@ -19,7 +20,6 @@
     </div>
     <!--Particle.JS Animation End-->
 
-    <!--Navigation-->
     <div class="navMenu">
         <div class="topLogo">
             <img src="images/logo-white.png" alt="JB icon logo">
@@ -38,153 +38,139 @@
             <ul id="navMenu">  <!--Menu-->
                 <li><a href="index">Home</a></li>
                 <li><a href="about" class="active">About</a></li>
-                <li><a href="work">My Work</a></li>
+                <li><a href="#">Projects</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
             <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
             <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="contact" target="_self"><img src="images/email.svg"  alt="Email"></a></li>
+            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
-    <!--Navigation End-->
-
-    <div class="container-flex">
-
-    <!--Page Title-->
-    <div class="page-title">
-        <h1>About Me</h1>
-    </div>
-    <!--Page Title End-->
-
-    <!--ContentStarts Here-->
-    <main id="app">
-
-    <div class="row" id="aboutIntro">
-        <div id="nameText">
-            <h2>Joanna Baile</h2>
-            <p>Developer and Designer</p>
+        <!--Navigation End-->
+        <div class="container-flex">
+        <!--Page Title-->
+        <div class="page-title">
+            <h1>About Me</h1>
         </div>
-        <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2" id="aboutText">
-            <p>I’m from the Greater Toronto Area studying in London, 
-                Ontario to be a web developer. I’m into a lot of 
-                different things and one day want to climb Mount 
-                Everest even though I’m terrified of heights.</p>
+        <!--Page Title End-->
 
-            <p>I want to be a part of projects that I can be proud 
-                of, while being a part of an amazing team to help 
-                further my career in development. Take some time 
-                to look at my work and if you’re interested in helping 
-                me make my dream happen, let’s get in touch.</p>
+        <main id="app">
+            <div class="row" id="aboutIntro" data-aos="fade-in">
+                <div id="nameText">
+                    <h2>Joanna Baile</h2>
+                    <p>Developer and Designer</p>
+                </div>
+                <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-2" id="aboutText" data-aos="fade-in">
+                    <p>I’m from the Greater Toronto Area studying in London, 
+                        Ontario to be a web developer. I’m into a lot of 
+                        different things and one day want to climb Mount 
+                        Everest even though I’m terrified of heights.</p>
+
+                    <p>I want to be a part of projects that I can be proud 
+                        of, while being a part of an amazing team to help 
+                        further my career in development. Take some time 
+                        to look at my work and if you’re interested in helping 
+                        me make my dream happen, let’s get in touch.</p>
+                        
+                    <div class="button" data-aos="fade-right">
+                        <a href="demoreel.html" target="_self" class="btn-effect" id="reelBtn" rel="nofollow noopener">My Reel</a>
+                        <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 offset-lg-1" data-aos="fade-in">
+                    <img src="images/jo-self.png" alt="joanna portrait">
+                </div>
+            </div>
+
+                <!--What I Offer-->
+            <div id="aboutOffer">
+            <h2 class="text-center" data-aos="fade-right">What I Offer</h2>
+                <ul class="row">
+                    <li class="col-12 col-md-5 col-lg-2 offset-lg-2" data-aos="fade-up">
+                        <img src="images/web.svg" alt="web development icon">
+                        <h3>Web Development</h3>
+                    </li>
+                    <li class="col-12 col-md-5 col-lg-2" data-aos="fade-up">
+                        <img src="images/design.svg" alt="design icon">
+                        <h3>UX/UI Design</h3>
+                    </li>
+                    <li class="col-12 col-md-5 col-lg-2" data-aos="fade-up">
+                        <img src="images/marketing.svg" alt="thumbs up icon">
+                        <h3>Social Media Marketing</h3>
+                    </li>
+                    <li class="col-12 col-md-5 col-lg-2" data-aos="fade-up">
+                        <img src="images/playlist.svg" alt="playlist icon">
+                        <h3>A Killer Playlist</h3>
+                    </li>
+                </ul>
+                    <a href="#" target="_self" class="btn-effect" id="workBtn">My Work</a>
+            </div>
+
+        <!--Skillset-->
+        <div id="aboutSkills" data-aos="fade-in">
+                <h2 class="text-center" data-aos="fade-in">My Skills</h2>
+                <div class="skillbar-wrap">
+                <div class="skillbar clearfix" data-percent="80%">
+                    <h4 class="skillbar-title"><span>HTML5</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
                 
-            <div class="button">
-                <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">My Reel</a>
-                <a href="#" target="_blank" class="btn-effect" rel="nofollow noopener">Resume</a>
+                <div class="skillbar clearfix" data-percent="80%">
+                    <h4 class="skillbar-title"><span>CSS/SASS</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                
+                <div class="skillbar clearfix" data-percent="70%">
+                    <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div>
+                
+                <div class="skillbar clearfix" data-percent="75%">
+                    <h4 class="skillbar-title"><span>Photoshop</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+                
+                <div class="skillbar clearfix" data-percent="60%">
+                    <h4 class="skillbar-title"><span>PHP</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+                
+                <div class="skillbar clearfix" data-percent="70%">
+                    <h4 class="skillbar-title"><span>WordPress</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">70%</div>
+                </div>
+                
+                <div class="skillbar clearfix" data-percent="80%">
+                    <h4 class="skillbar-title"><span>Github</span></h4>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-3 offset-lg-1">
-            <img src="images/jo-self.png">
-        </div>
-    </div>
-
-    <!--What I Offer-->
-    <div id="aboutOffer">
-    <h2 class="text-center">What I Offer</h2>
-        <ul class="row">
-            <li class="col-12 col-md-5 col-lg-2 offset-lg-2">
-                <img src="images/web.svg">
-                <h3>Web Development</h3>
-            </li>
-            <li class="col-12 col-md-5 col-lg-2">
-                <img src="images/design.svg">
-                <h3>UX/UI Design</h3>
-            </li>
-            <li class="col-12 col-md-5 col-lg-2">
-                <img src="images/marketing.svg">
-                <h3>Social Media Marketing</h3>
-            </li>
-            <li class="col-12 col-md-5 col-lg-2">
-                <img src="images/playlist.svg">
-                <h3>A Killer Playlist</h3>
-            </li>
-        </ul>
-            <a href="#" target="_self" class="btn-effect" id="workBtn">My Work</a>
-    </div>
-
-    <!--Skillset-->
-    <div id="aboutSkills">
-        <h2 class="text-center">My Skills</h2>
-        <div class="skillbar-wrap">
-            <div class="skillbar clearfix html5" data-percent="80%">
-                <h4 class="skillbar-title"><span>HTML5</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">80%</div>
-            </div>
-            
-            <div class="skillbar clearfix css" data-percent="80%">
-                <h4 class="skillbar-title"><span>CSS/SASS</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">80%</div>
-            </div>
-            
-            <div class="skillbar clearfix javascript" data-percent="70%">
-                <h4 class="skillbar-title"><span>JavaScript</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">70%</div>
-            </div>
-            
-            <div class="skillbar clearfix psd" data-percent="75%">
-                <h4 class="skillbar-title"><span>Photoshop</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">75%</div>
-            </div>
-            
-            <div class="skillbar clearfix php" data-percent="60%">
-                <h4 class="skillbar-title"><span>PHP</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">60%</div>
-            </div>
-            
-            <div class="skillbar clearfix wordpress" data-percent="70%">
-                <h4 class="skillbar-title"><span>WordPress</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">70%</div>
-            </div>
-            
-            <div class="skillbar clearfix git" data-percent="80%">
-                <h4 class="skillbar-title"><span>Github</span></h4>
-                <div class="skillbar-bar"></div>
-                <div class="skill-bar-percent">75%</div>
-            </div>
-        </div>
-    </div>	
-        
-
-    <!--Testimonial-->
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>Enter some text here</p>
-        <h3>Name & Title</h3>
-        <div id="testimPics">
-            <ul>
-                <lI>
-                    <img>
-                </lI>
-            </ul>
-        </div>
-    </section>
-    <!--Testimonial End-->
-    </div>
-
+        </main> <!--vue js end-->
+    
     <!--FOOTER-->
-    <footer id="footerLanding">
+    <footer id="footerPages">
         <div class="row">
             <div class="col-12 col-md-4" id="bottomSocial">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="contact"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/">
+                        <object data="images/linkedin.svg" type="image/svg+xml" class="svg-graphic"></object>
+                    </a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank">
+                        <object data="images/github.svg" type="image/svg+xml" class="svg-graphic"></object>
+                        </a></li>
+                    <li><a href="contact">
+                        <object data="images/email.svg" type="image/svg+xml" class="svg-graphic"></object>
+                        </a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
@@ -193,13 +179,14 @@
         </div>
     </footer>
     <!--FOOTER END-->
-</div>
-    <!--Content Ends Here-->
 
+</div> <!--Container end-->
 
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script> <!--AOS-->
     <script src="js/app.js"></script> <!--VUE Javascript-->
     <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
