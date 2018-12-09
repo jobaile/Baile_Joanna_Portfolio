@@ -14,3 +14,11 @@ $secondary-font: 'Lato', sans-serif;
 .selected {
     text-decoration: line-through;
 }
+
+h1,h2,h3,h4,h5 {
+    font-family: $primary-font;
+}
+
+p, a, span, button {
+    font-family: $secondary-font;
+}
