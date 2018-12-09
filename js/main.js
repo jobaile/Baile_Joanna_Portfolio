@@ -12,7 +12,12 @@
     var muteButton = document.querySelector("#muteVideo");
     var volumeBar = document.querySelector('#volumeBar');
     var fullVideo = document.querySelector("#full-screen");
+
+    //Escape key working for lightbox!!!   
+    var modal = document.querySelector(".lightBox");
+    
   
+    //For hamburger
     function transformStart() {
         //console.log("from transformStart()");
         var strokes = document.querySelectorAll(".strokes");
@@ -21,11 +26,9 @@
         strokes[1].classList.toggle("hide");
         strokes[2].classList.toggle("animate2");
         menuOverlay.classList.toggle("show");
-
-        // var topLogo = document.querySelector(".topLogo");
-        // topLogo.style.display = "none";
     }
 
+    //Video player functions
     function playVideo(){
         //console.log("from playVideo");
         if (video.paused) {
@@ -88,6 +91,14 @@
     rewindVideo.addEventListener("click", rewindVid); //REWIND VIDEO X
     fullVideo.addEventListener("click", fullScreen); //FULLSCREEN
     video.addEventListener("timeupdate", progPlay); //TIME UPDATE
+    document.addEventListener('keydown', function(esc) { //Esc key
+      let keyCode = esc.keyCode; 
+      //console.log("from esc key");
+
+      if (keyCode === 27) { //This is the integer for escape!
+          modal.style.display = "none";
+      }
+  });
   
 
 })();

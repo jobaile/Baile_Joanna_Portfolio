@@ -9,7 +9,6 @@
         echo json_encode($data);
     }
 
-
     //returns the portfolio work
     if (isset($_GET["port"])) {
         $data = get_one_work($conn, $_GET["port"]);
