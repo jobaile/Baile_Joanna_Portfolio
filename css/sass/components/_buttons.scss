@@ -18,3 +18,36 @@
     background: $black;
     color: $white !important;
     }
+
+.btn-effect-lb {
+color: $white !important;
+text-transform: uppercase;
+padding: 15px;
+border-radius: 3px;
+display: inline-block;
+border: none;
+width: 200px;
+text-align: center;
+border: 1px solid $white;
+margin: 0 0 1em 2em;
+}
+
+.btn-effect-lb:hover {
+@include text-shadow;
+transition: all 0.2s ease;
+text-decoration: none;
+background: $yellow;
+color: $black !important;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-effect-lb {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-effect-lb {
+        margin: 1em 0 0 1em;
+    }
+}

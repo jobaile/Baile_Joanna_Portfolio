@@ -1,0 +1,62 @@
+#closeBtn {
+    color: $white;
+    font-size: 20px;
+}
+
+#closeBtn:hover {
+    color: $yellow;
+
+}
+
+.lightBox {
+    width: 100%;
+    height: 110%;
+    top: -30px;
+    transition: all 0.7s;
+    z-index: 99999;
+    display:none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    padding: 2em;
+   }
+
+.lightBox h3 {
+    margin: 1em 0 0.5em 0;
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 2em;
+    color: $white;
+}
+
+.lightBox p {
+    color: $white;
+    font-family: $secondary-font;
+}
+
+
+.lightBox img{
+    display: block;
+    width: 100%;
+}
+
+#closeBtn {
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.portfolioSelection {
+    z-index: 1;
+}
+
+@media screen and (min-width: 1024px){
+    .lightBox {
+        padding: 4em;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .lightBox {
+        padding: 6em;
+    }
+}

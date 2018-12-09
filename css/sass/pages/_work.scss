@@ -1,65 +1,48 @@
+main {
+    margin: 0;
+}
 #portfolio {
     background-color: $white;
     overflow: hidden;
 }
 
-#lightbox {
-    background-color: $yellow;
-    overflow: hidden;
+.workSection {
+    background-color: $white;
 }
 
-/********* Simple or original overlay *******/
-/* Main container */
-.overlay-image {
-    position: relative;
-    width: 100%;
-   }
-   /* Original image */
-   .overlay-image .image {
-    display: block;
-    width: 50%;
-    height: auto;
-   }
-   /* Original text overlay */
-   .overlay-image .text {
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.5em;
-    text-shadow: 2px 2px 2px #000;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-   }
+.workSection ul {
+    padding: 0;
+}
 
-/********* Overlay on hover *******/
-/* New overlay on hover */
-.overlay-image .hover {
-    position: absolute;
-    top: 0;
-    height: 50%;
-    width: 50%;
-    opacity: 0;
-    transition: .5s ease;
-   }
-   /* New overlay appearance on hover */
-   .overlay-image:hover .hover {
-    opacity: 1;
-   }
+.workSection ul li {
+    padding: 1em;
+    display: inline;
+}
 
+.workSection ul li img {
+    margin: 1em 0 1em 0;
+    width: 90%;
+}
 
-   //VUEJS STUFF
+@media screen and (min-width: 768px){
+    .workSection ul {
+        padding-left: 2em;
+    }
+    
+    .workSection ul li img {
+        margin: 1em 0 1em 0;
+        width: 40%;
+    }
+}
 
-   li { 
-       list-style-type: none;
-   }
+@media screen and (min-width: 1024px){
+    .workSection ul {
+        padding-left: 5em;
+    }
+}
 
-   img { 
-       width: 500px;
-   }
-
-   ul li {
-       display: inline-block;
-   }
+@media screen and (min-width: 1440px){
+    .workSection ul {
+        padding-left: 8em;
+    }
+}

@@ -128,12 +128,12 @@ footer#footerPages {
     color: $white;
 }
 
-ul#footerSocial {
+#bottomSocial ul li {
     display: inline;
   }
   
-#footerSocial img {
-    width: 50px;
+#bottomSocial img {
+    width: 30px;
     padding: 0;
     margin: 0;
   }
@@ -143,10 +143,6 @@ ul#footerSocial {
     position: relative;
     cursor: pointer;
     z-index: 999;
-}
-
-#bottomSocial img {
-    width: 30px;
 }
 
 

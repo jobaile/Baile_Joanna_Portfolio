@@ -57,10 +57,12 @@
     <!--Page Title End-->
 
       <!--Vue JS container-->
-      <main id="app">
+      <main id="app" class="workSection">
+        <h2 class="text-center">Check out my latest work</h2>
+        <p class="text-center">Click on an image for more information</p>
 
       <div class="lightBox" :class="{ 'show-portfolio' : showDetails }">
-        <span id="closeBtn" @click="closeLightBox">&times;</span>
+            <span id="closeBtn" @click="closeLightBox">&times;</span>
           <div class="row">
             <div class="col-12 col-md-8">
                 <img :src="'images/work/' + workimg" alt="work image large">
@@ -68,10 +70,13 @@
             <div class="col-12 col-md-4">
                 <h3 class="car-part text-center"> {{ worktitle }}</h3>
                 <p> {{ workdesc}} </p>
-                
-                <a :href="workurl" v-on:click="loadSite">
-                  <button>More Info</button>
+
+            <div>
+                <a :href="workurl" v-on:click="loadSite" class="btn-effect-lb">
+                    More Info
                 </a>
+            </div>
+            
             </div>
           </div>
       </div>
@@ -79,34 +84,15 @@
         <div class="portfolioSelection">
           <ul>
             <li v-for="tbl_portfolio in workdata"> <!-- fetches the database stuff -->
-              <a :href="tbl_portfolio.port_url" v-on:click="loadPortfolio" @click="openLightBox">
-                  <img :src="'images/work/'  + tbl_portfolio.port_img" alt="work image thumb"> <!--Debug this-->
-              </a>
+                <a :href="tbl_portfolio.port_url" v-on:click="loadPortfolio" @click="openLightBox">
+                    <img :src="'images/work/'  + tbl_portfolio.port_img" alt="work image thumb"> <!--Debug this-->
+                </a>
             </li>
           </ul>
         </div>
-
       </main>
       <!--Vue JS container end-->
-
-    <!--Lightbox-->
-    <div id="lightbox">
-        <span class="closeBtn">&times;</span>
-        <div class="vidPlayer">
-        <video id="headerVid" poster="images/video-poster.jpeg" alt="promotional video">
-            <source src="video/desktop.mp4" type="video/mp4"/>
-                Your browser does not support the video files! Please try another browser.
-            </video>
-        
-            <div id="vidControls">
-            <button id="rewind"><i class="fas fa-step-backward"></i></button>
-            <button id="playPause"><i class="fas fa-play"></i></button>
-            <input type="range" id="seek-bar" class="slider" value="0">
-            <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
-            <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></button></div>
-            </div>
-        </div>
-    </div>
+</div> <!--Container end-->
 
     <!--FOOTER-->
     <footer id="footerPages">
@@ -119,7 +105,6 @@
         Copyright 2018. Joanna Baile</p>
     </footer>
     <!--FOOTER END-->
-</div>
     <!--Content Ends Here-->
 
 

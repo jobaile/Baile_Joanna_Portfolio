@@ -16,6 +16,13 @@ div.topLogo{
   z-index: 999;
 }
 
+@media screen and (min-width: 1024px){
+  div.topLogo{
+    float: left;
+    margin: 2em 0 0 4em;
+  }
+}
+
 nav.menu-toggle{
     width: 50px;
     height: 40px;

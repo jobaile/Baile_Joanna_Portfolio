@@ -1,84 +1,31 @@
 <?php  
 include 'connect.php';
 
-    function get_one_testimonials($pdo, $testimonial) {
-        $query = "SELECT * FROM tbl_testimonial WHERE testim_id = '$testimonial'"; //select the table
+    function get_one_part($pdo, $work) {
+        $query = "SELECT * FROM tbl_portfolio WHERE port_id = '$work'"; //this means ?part=ID
+        //make sure this matches database
 
-        $get_testim = $pdo->query($query);
+        $get_part = $pdo->query($query);
         $results = array();
 
-        while($row = $get_testim->fetch(PDO::FETCH_ASSOC)){
+        while($row = $get_part->fetch(PDO::FETCH_ASSOC)){
             $results[] = $row;
         }
 
         return $results;
     }
 
-    function get_all_testimonials($pdo) {
-        $query = "SELECT * FROM tbl_testimonial"; //select the table
+    function get_all_parts($pdo) {
+        $query = "SELECT * FROM tbl_portfolio"; 
+        //make sure this matches database
 
-        $get_testim = $pdo->query($query);
+        $get_part= $pdo->query($query);
         $results = array();
 
-        while($row = $get_testim->fetch(PDO::FETCH_ASSOC)){
+        while($row = $get_part->fetch(PDO::FETCH_ASSOC)){
             $results[] = $row;
         }
 
         return $results;
     }
-    
-        //get a single portfolio work
-        function get_one_work($pdo, $work) {
-            $query = "SELECT * FROM tbl_work WHERE work_id = '$work'"; //select the table
-    
-            $get_work = $pdo->query($query);
-            $results = array();
-    
-            while($row = $get_work->fetch(PDO::FETCH_ASSOC)){
-                $results[] = $row;
-            }
-    
-            return $results;
-        }
-    
-        function get_one_service($pdo, $serv) {
-            $query = "SELECT * FROM tbl_services WHERE service_id = '$serv'"; //select the table
-    
-            $get_services = $pdo->query($query);
-            $results = array();
-    
-            while($row = $get_services->fetch(PDO::FETCH_ASSOC)){
-                $results[] = $row;
-            }
-    
-            return $results;
-        }
-    
-    
-        //get all the work
-        function get_all_work($pdo) {
-            $query = "SELECT * FROM tbl_work"; //select the table
-    
-            $get_work = $pdo->query($query);
-            $results = array();
-    
-            while($row = $get_work->fetch(PDO::FETCH_ASSOC)){
-                $results[] = $row;
-            }
-    
-            return $results;
-        }
-    
-            function get_all_services($pdo) {
-            $query = "SELECT * FROM tbl_services"; //select the table
-    
-            $get_services = $pdo->query($query);
-            $results = array();
-    
-            while($row = $get_services->fetch(PDO::FETCH_ASSOC)){
-                $results[] = $row;
-            }
-    
-            return $results;
-        }
 ?>
