@@ -1,6 +1,5 @@
 (() => {
 //Particle.js Stars (using this as a background)
-    //https://github.com/VincentGarreau/particles.js/
     particlesJS("particles-js", {
         "particles": {
             "number": {

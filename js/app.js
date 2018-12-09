@@ -4,11 +4,6 @@
 
         data: {
             workdata : [], //grabs the work array
-            testimonialdata : [],
-
-            testimonialname : "",
-            testimonialtitle : "",
-            testimonialdesc : "",
 
             worktitle : "", //grabs work title
             workdesc : "", //grabs work description 
@@ -16,16 +11,130 @@
             workurl : "", //grabs the url
 
             showDetails : false, //because we have the lightbox setup, this needs to be set to false
-            showTestimonialDetails : true
+
+            roletitle : "My Role",
+
+            pageTitleOne : "",
+            sosCategory: "",
+            sosDate : "",
+            sosAbout : "",
+            sosImgOne : "",
+            sosDesc : "",
+            sosImgTwo : "",
+            
+            pageTitleTwo : "",
+            fimsCategory: "",
+            fimsDate : "",
+            fimsAbout : "",
+            fimsImgOne : "",
+            fimsDesc : "",
+            fimsImgTwo : "",
+
+            pageTitleThree : "",
+            neroCategory: "",
+            neroDate : "",
+            neroAbout : "",
+            neroImgOne : "",
+            neroDesc : "",
+            neroImgTwo : "",
+
+            pageTitleFour : "",
+            getCategory: "",
+            getDate : "",
+            getAbout : "",
+            getImgOne : "",
+            getDesc : "",
+            getImgTwo : "",
+
+            pageTitleFive : "",
+            lsfcCategory: "",
+            lsfcDate : "",
+            lsfcAbout : "",
+            lsfcImgOne : "",
+            lsfcDesc : "",
+            lsfcImgTwo : "",
+
+            pageTitleSix : "",
+            reelCategory: "",
+            reelDate : "",
+            reelAbout : "",
+            reelImgOne : "",
+            reelDesc : "",
+            reelImgTwo : "",
+
         },
 
 
-        created : function(){
+        created : function(e){
             //this will fetch the data during page load
             this.fetchPortfolioData(null);
+            this.loadWorkFiles();
+
         },
 
         methods : {
+            loadWorkFiles(){
+                const url = `includes/index.php?`; //selects the specific id
+
+                fetch(url)
+                .then (res => res.json())
+                .then (data => {
+                    //make sure it's the same as the database
+                    this.pageTitleOne = data[0].port_title;
+                    this.sosCategory = data[0].port_category;
+                    this.sosDate = data[0].port_date;
+                    this.sosAbout = data[0].port_about;
+                    this.sosImgOne = data[0].port_img;
+                    this.sosDesc = data[0].port_desc;
+                    this.sosImgTwo = data[0].port_img2;
+
+                    this.pageTitleTwo = data[1].port_title;
+                    this.fimsCategory = data[1].port_category;
+                    this.fimsDate = data[1].port_date;
+                    this.fimsAbout = data[1].port_about;
+                    this.fimsImgOne = data[1].port_img;
+                    this.fimsDesc = data[1].port_desc;
+                    this.fimsImgTwo = data[1].port_img2;
+
+                    this.pageTitleThree = data[2].port_title;
+                    this.neroCategory = data[2].port_category;
+                    this.neroDate = data[2].port_date;
+                    this.neroAbout = data[2].port_about;
+                    this.neroImgOne = data[2].port_img;
+                    this.neroDesc = data[2].port_desc;
+                    this.neroImgTwo = data[2].port_img2;
+
+                    this.pageTitleFour = data[3].port_title;
+                    this.getCategory = data[3].port_category;
+                    this.getDate = data[3].port_date;
+                    this.getAbout = data[3].port_about;
+                    this.getImgOne = data[3].port_img;
+                    this.getDesc = data[3].port_desc;
+                    this.getImgTwo = data[3].port_img2;
+
+                    this.pageTitleFive = data[4].port_title;
+                    this.lsfcCategory = data[4].port_category;
+                    this.lsfcDate = data[4].port_date;
+                    this.lsfcAbout = data[4].port_about;
+                    this.lsfcImgOne = data[4].port_img;
+                    this.lsfcDesc = data[4].port_desc;
+                    this.lsfcImgTwo = data[4].port_img2;
+
+                    this.pageTitleSix = data[5].port_title;
+                    this.reelCategory = data[5].port_category;
+                    this.reelDate = data[5].port_date;
+                    this.reelAbout = data[5].port_about;
+                    this.reelImgOne = data[5].port_img;
+                    this.reelDesc = data[5].port_desc;
+                    this.reelImgTwo = data[5].port_img2;
+
+
+                })
+                .catch(function(error){
+                    console.log(error);
+                })   
+            },
+
             openLightBox(e){
                 //console.log('from openlightbox');
 

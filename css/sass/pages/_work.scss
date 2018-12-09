@@ -53,3 +53,28 @@ main {
 #portfolioSection {
     margin-top: 1em;
 }
+
+
+div.back-text a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: $black;
+    text-shadow: 2px 2px 8px rgba(99, 85, 21, 0.74);
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+div.back-text a:hover {
+    color: $yellow;
+}
+
+
+div.back-text i {
+    color: $black;
+    text-shadow: 2px 2px 8px rgba(99, 85, 21, 0.74);
+}
+
+div.back-text i:hover {
+    color: $yellow;
+}

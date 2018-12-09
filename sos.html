@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Joanna Baile | Contact</title>
+    <title>Joanna Baile | Projects </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -22,11 +22,9 @@
     <!--Navigation-->
     <div class="navMenu">
         <div class="topLogo">
-            <a href="#">
-                <img src="images/logo-white.png" alt="JB icon logo">
-            </a>
+            <img src="images/logo-white.png" alt="JB icon logo">
         </div>
-        <div class="col-12">
+        <div class="col-11 col-md-12 col-lg-11">
             <nav class="menu-toggle">
                 <div class="strokes"></div>
                 <div class="strokes"></div>
@@ -38,95 +36,95 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="about" class="selected">About</a></li>
-                <li><a href="work">My Work</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="about" class="active">About</a></li>
+                <li><a href="projects">Projects</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
-            <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-            <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+            <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+            <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
+            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
 
-    <!--Page Title-->
-<div id="app"> <!--VUE JS START-->
+    <div class="container-flex">
 
-    <section class="page-title">
-        <h1 class="text-center">My Work</h1>
-    </section>
+    <!--Page Title-->
+    <div class="page-title">
+        <h1>Contact Me</h1>
+    </div>
     <!--Page Title End-->
-<div id="app">
+
+    <!--ContentStarts Here-->
+    <div id="app">
     <!--Content Starts Here-->
     <div class="container-flex">
-        <div class="portfolioCon">
-            <h1 class="text-center">{{ pageTitleOne }}</h1>
-            <div class="row">
-                <div class="col-12 col-lg-4 offset-lg-1">
+
+        <div class="projectCon"> <!--Project Container-->
+            <div class="back-text">
+                <a href="projects">GO BACK <i class="fas fa-angle-left"></i></a>
+            </div>
+            <div class="row" id="projectHeader">
+                <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
                     <img v-bind:src="'images/work/'+ sosImgOne">
                 </div>
-                <div class="col-12 col-lg-4 offset-lg-1">
-                    <h2 class="text-center"> {{ sosCategory }} </h2>
-                    <h3 class="text-center"> {{ sosDate }}</h3>
+                <div class="col-12 col-md-5">
+                    <h2> {{ pageTitleOne }} </h2>
+                    <h3> {{ sosCategory }} </h3>
+                    <h4> {{ sosDate }}</h4>
                     <p> {{ sosAbout }} </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-4 offset-lg-1 order-lg-2">
-                    <img src="images/work/fimssc.jpg">
-                </div>
-                <div class="col-12 col-lg-4 offset-lg-1 order-lg-1">
-                    <p> {{ sosDesc }} </p>
-                </div>
-            </div>
 
-            <div class="button">
-                <a href="https://studentsofferingsupport.ca/" target="_blank" class="btn-effect" rel="nofollow noopener">Visit</a>
-            </div>
-
-            <div class="moreInfo">
-                <h4>More Examples</h4>
-                <div class="row">
-                    <ul>
-                        <li><img src="images/web.svg"></li>
-                        <li><img src="images/web.svg"></li>
-                        <li><img src="images/web.svg"></li>
-                    </ul>
+            <div class="row" id="projectContent">
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <img v-bind:src="'images/work/'+ sosImgTwo">
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1">
+                        <h3 class="text-center">{{ sostitle }}</h3>
+                        <p> {{ sosDesc }} </p>
+                </div>
+                <div class="col-12 order-lg-3 offset-lg-5">
+                     <a href="https://studentsofferingsupport.ca/" target="_blank" class="btn-effect" id="projectbtn">Live Site</a>
                 </div>
             </div>
-        </div>
+        </div> <!--Project Container End-->
     </div>
     <!--Content Ends Here-->
-
 </div> <!--VUE JS END-->
+
+    <!--ContentEnds Here-->
+</div>
 
     <!--FOOTER-->
     <footer id="footerLanding">
         <div class="row">
-            <div class="col-12 col-md-4 offset-2 offset-md-0" id="bottomSocial">
+            <div class="col-12 col-md-4" id="bottomSocial">
                 <ul>
-                    <li><a href="#"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-                    <li><a href="#"><img src="images/github.svg" alt="Github logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
                     <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
-            <div class="col-12 col-md-8 offset-md-0" id="footerText">
+            <div class="col-12 col-md-8" id="footerText">
                 <p>Made with love. &copy; 2018 Joanna Baile.</p>  
             </div>
         </div>
     </footer>
     <!--FOOTER END-->
+</div>
     <!--Content Ends Here-->
 
 
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="js/app.js"></script> <!--VUE Javascript-->
+    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
-    <script src="js/vue.js"></script> <!--Main Javascript-->
-
     
 
 </body>
