@@ -97,6 +97,10 @@ ul#landingSocial {
     ul#landingSocial {
         padding: 1em 0 1.5em 24em;
     }
+
+    #footerPages p {
+        float: right;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1430px) {
@@ -123,6 +127,7 @@ ul#landingSocial {
 footer#footerPages {
     padding: 1em 1em 1em 0em;
     background-color: $black;
+    margin-top: 1em;
 }
 
 #footerPages p {
@@ -167,7 +172,15 @@ footer#footerPages {
 
 @media screen and (min-width: 1024px) {
     #footerLanding p{
-        float: right;
+        text-align: center;
         padding-right: 1em;
     }
+}
+
+object {
+    pointer-events: none;
+}
+.svg-graphic {
+    width: 40px;
+    cursor: pointer;
 }
