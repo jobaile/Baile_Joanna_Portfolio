@@ -58,6 +58,9 @@ i {
     div.landing-text{
         padding-top: 10%;
     }
+    div.landing-text p{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -66,7 +69,7 @@ i {
     }
 
     div.landing-text p {
-        margin-top: 5%;
+        margin-top: 0;
     }
 }
 
@@ -74,6 +77,10 @@ i {
     div.landing-text{
         margin-top: 3em;
         padding-top: 10%;
+    }
+    div.landing-text p {
+        margin-top: 3em;
+        font-size: 1em;
     }
 }
 

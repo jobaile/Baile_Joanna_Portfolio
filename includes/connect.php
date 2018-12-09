@@ -3,7 +3,7 @@ $user = "root";
 $pw = "root"; //blank for windows users 
 
 try {
-    $conn = new PDO('mysql:host=localhost;dbname=baile_j_portfolio', $user, $pw);
+    $conn = new PDO('mysql:host=localhost;dbname=db_portfolio', $user, $pw);
     //var_dump($conn); taking out that object pdo thing
 
 } catch (PDOException $exception) {

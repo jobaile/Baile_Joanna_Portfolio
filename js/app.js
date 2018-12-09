@@ -4,14 +4,19 @@
 
         data: {
             workdata : [], //grabs the work array
+            testimonialdata : [],
+
+            testimonialname : "",
+            testimonialtitle : "",
+            testimonialdesc : "",
 
             worktitle : "", //grabs work title
             workdesc : "", //grabs work description 
-
             workimg : "", //grabs work image1
             workurl : "", //grabs the url
 
-            showDetails : false //because we have the lightbox setup, this needs to be set to false
+            showDetails : false, //because we have the lightbox setup, this needs to be set to false
+            showTestimonialDetails : true
         },
 
 
@@ -80,6 +85,16 @@
                 .catch(function(error) {
                     console.log(error);
                 });
+            },
+
+            loadTestimonial(e) {
+                //debugger;
+                console.log("from loadTestimonial");
+
+            },
+
+            fetchTestimonialData(testimonial) {
+                console.log("from fetchTestimonialData");
             }
         }
     });
