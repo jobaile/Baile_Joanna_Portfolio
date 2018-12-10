@@ -36,28 +36,6 @@ cd Baile_Joanna_Portfolio
 npm install
 npm start
 ```
-
-Database Installation
-```
-# MAMP, WAMP, XAMPP
-$ Open application and turn on servers
-
-# Creating a database
-$ Go into PHPMyAdmin and create a database called "db_infographic"
-
-# Importing database
-$ Import db_infographic.sql into your database
-
-# Edit configurations
-$ Inside includes/config.php, make sure the settings are correct for localhost, root, pw, and db 
-
-# htdocs or WWW
-$ Drag the folder into your htdocs or WWW folder 
-
-# Run through localhost
-$ Go through your localhost and find Baile_Joanna_HW3_Infographic
-```
-
 And you’re done!
 
 
