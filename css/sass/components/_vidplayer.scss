@@ -1,101 +1,116 @@
-/* hide controls on fullscreen with WebKit */
-video::-webkit-media-controls-enclosure {
-  display: none !important;
-}
 
+#videoPlayer {
+  width: 100%;
+  background-color: $black;
+}
+/**********Homepage*********/
 video {
-  height: auto !important;
-  max-width: 100% !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background-color: rgba(215, 38, 61, 0);  
+  width: 100%;
 }
 
-#video-container {
-  height: 100vh;
-  overflow: hidden;
-  padding: 0;
+#vidControls {
+  margin-left: 2em;
 }
 
-#video-play-center {
-  display:flex;
-  position:absolute;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  height:100%;
+/*Video Player*/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 45%;
+  margin: 5.65px 0;
+}
+
+input[type=range]#volumeBar {
+  -webkit-appearance: none;
+  width: 10%;
+  margin: 5.65px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.7px;
   cursor: pointer;
-  opacity: .8;
-  transition: all .8s ease-in-out;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: $white;
+  border-radius: 2.8px;
+  border: 0.2px solid #010101;
 }
-
-#video-controls {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  padding: 5px;
-  text-align: center;
-  background-color: rgba(215, 38, 61, 0.5);
-  z-index: 2147483647;
-  transition: all .8s ease-in-out;
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 13px;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.76);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.85px;
 }
-
-button {
-  border: 0;
-  color: #eee;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-  border: none;
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #b77baf;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #b271a9;
+  border-radius: 2.8px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 13px;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.76);
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.7px;
   cursor: pointer;
   background: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
+  border-color: transparent;
+  color: transparent;
 }
 
-button:focus {
-  outline: 0;
-}
-
-button:hover {
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 13px;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.76);
   cursor: pointer;
-  color: #D7263D;
+  height: 8.7px;
 }
 
-#seek-bar {
-  width: 360px;
+/*Video Player End*/
+
+i.fa.fa-expand-arrows-alt {
+  color: $black;
 }
 
-#volume-bar {
-  width: 60px;
+i.fas.fa-volume-up {
+  color: $black;
 }
 
-video:-webkit-full-screen + #video-controls {
-  position: relative;
-  bottom: 0;
+i.fas.fa-play {
+  color: $black;
 }
 
-/* slider */
-input[type="range"] {
-  -webkit-appearance: none !important;
-  position:relative;
-  top:-4px;
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
+i.fas.fa-pause {
+  color: $black;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none !important;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 8px;
+i.fas.fa-step-backward {
+  color: $black;
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: #D7263D;
+i.fas.fa-volume-off {
+  color: $black;
 }

@@ -1,13 +1,19 @@
-<?php
-$user = "root";
-$pw = "root"; //blank for windows users 
+<?php 
+    $db_dsn = array(
+        'host' => 'localhost',
+        'dbname' => 'db_portfolio',
+        'charset' => 'utf8',
+    );
+    
+    $dsn = 'mysql:' .http_build_query($db_dsn, '', ';');
+        //This is the DB credentials
+        $db_user = 'root';
+        $db_pass = 'root'; 
 
-try {
-    $conn = new PDO('mysql:host=localhost;dbname=db_portfolio', $user, $pw);
-    //var_dump($conn); taking out that object pdo thing
-
-} catch (PDOException $exception) {
-    echo 'connect error' . $exception->getMessage();
-}
-
+    try{
+        $pdo = new PDO($dsn, $db_user, $db_pass);
+    }   catch(PDOException $exception) {
+        echo 'Connection Error ' . $exception->getMessage(); 
+        exit();
+    }
 ?>

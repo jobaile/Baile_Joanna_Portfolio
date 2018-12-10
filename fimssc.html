@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <!--Particle.JS Animation-->
@@ -36,16 +38,16 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="index">Home</a></li>
-                <li><a href="about" class="active">About</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
             <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
             <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
+            <li><a href="contact.html"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
@@ -65,9 +67,9 @@
 
         <div class="projectCon"> <!--Project Container-->
             <div class="back-text">
-                <a href="projects">GO BACK <i class="fas fa-angle-left"></i></a>
+                <a href="projects"> <i class="fas fa-angle-left"></i></a>
             </div>
-            <div class="row" id="projectHeader">
+            <div class="row" id="projectHeader" data-aos="fade-left">
                 <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
                     <img v-bind:src="'images/work/'+ fimsImgOne">
                 </div>
@@ -79,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="row" id="projectContent">
+            <div class="row" id="projectContent" data-aos="fade-right">
                 <div class="col-12 col-lg-6 order-lg-2">
                     <img v-bind:src="'images/work/'+ fimsImgTwo">
                 </div>
@@ -106,7 +108,7 @@
                 <ul>
                     <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
                     <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
@@ -122,6 +124,8 @@
     <!--JAVASCRIPT HERE-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--Particle JS-->
     <script src="js/particles.js"></script> <!--Particles JS (stars)-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script> <!--AOS-->
     <script src="js/app.js"></script> <!--VUE Javascript-->
     <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->

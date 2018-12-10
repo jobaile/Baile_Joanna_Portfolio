@@ -30,7 +30,6 @@
           modal.style.display = "none";
       }
     });
-  
 
     
 })();

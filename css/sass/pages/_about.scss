@@ -24,6 +24,10 @@
     font-size: 1.5em;
 }
 
+#aboutOffer ul li img {
+    margin-left: 6em;
+}
+
 
 @media screen and (min-width: 768px){
     #nameText {
@@ -43,7 +47,7 @@
 }
 
 #aboutOffer ul li img {
-    margin: 1em 0 1em 5.2em;
+    margin: 1em 0 1em 5.5em;
     width: 20%;
 }
 
@@ -163,4 +167,32 @@
         text-align: center;
         margin-left: 40em;
     }
+
+    .funFacts {
+        padding-left: 8em;
+    }
+}
+
+#aboutFacts {
+    background-color: $white;
+    padding: 1em;
+}
+
+#aboutFacts h2 {
+    font-family: $primary-font;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#aboutFacts ul li{
+    display: inline;
+}
+
+#aboutFacts ul li img{
+    width: 20%;
+    margin-left: 6.5em;
+}
+
+#aboutFacts p {
+    font-size: 1em;
 }
