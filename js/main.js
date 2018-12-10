@@ -1,5 +1,4 @@
 (() => {
-
     //Hamburger Menu Toggle
     var hamburger = document.querySelector(".menu-toggle"),
         menuOverlay = document.querySelector(".menu-overlay");
@@ -8,7 +7,6 @@
     //Escape key working for lightbox!!!   
     var modal = document.querySelector(".lightBox");
     
-  
     //For hamburger
     function transformStart() {
         //console.log("from transformStart()");
@@ -21,15 +19,15 @@
     }
 
     hamburger.addEventListener("click", transformStart);
-    document.addEventListener("DOMContentLoaded", skillNewBars); // skill bar
-    document.addEventListener('keydown', function(esc) { //Esc key
-      let keyCode = esc.keyCode; 
-      //console.log("from esc key");
 
-      if (keyCode === 27) { //This is the integer for escape!
-          modal.style.display = "none";
-      }
-    });
+    document.addEventListener('keydown', function(esc) { //Esc key
+        let keyCode = esc.keyCode; 
+        //console.log("from esc key");
+  
+        if (keyCode === 27) { //This is the integer for escape!
+            modal.style.display = "none";
+        }
+      });
 
     
 })();
