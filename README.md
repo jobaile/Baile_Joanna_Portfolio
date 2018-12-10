@@ -9,25 +9,56 @@ This is the personal portfolio site for Joanna Baile
 - [NPM](https://www.npmjs.com/) - A package manager
 - [Vue JS](https://vue.com) - A JavaScript framework for user interfaces
 - [SASS](https://sass-lang.com/) - Makes the CSS easier to do!
+- [Animate on Scroll](https://michalsnik.github.io/aos/) - Makes some cool scrolling effects
 
 
+## Installing
 
-### Installing
-Either download the zip to your desktop or enter the following line in your command line:
+Works best when opened with Google Chrome.
+MAMP or WAMP is also needed for this.
+To install, open your command line. Terminal for Mac or Command Prompt for Windows.
 
-```bash
-git clone https://github.com/jobaile/Baile_Joanna_Portfolio
+```
+# Pick the location of where this repository will be downloaded, 
+for example purposes this will be on your desktop
+
+$ cd Desktop
+
+# Clone this repository into your local machine
+
+$ git clone https://github.com/jobaile/Baile_Joanna_Portfolio
 ```
 
 In your command line, go to where you installed the folder and enter the following lines to download needed packages and dependencies:
 
-```bash
-cd Baile_J_Portfolio
+```
+cd Baile_Joanna_Portfolio
 npm install
 npm start
 ```
 
-After entering the following lines, this will run the appropriate compilers to make the site to run. When testing or making changes to the site locally, the database must be installed onto a solution stack package such as MAMP or XAMPP. The database is found under baile_j_portfolio.sql. 
+Database Installation
+```
+# MAMP, WAMP, XAMPP
+$ Open application and turn on servers
+
+# Creating a database
+$ Go into PHPMyAdmin and create a database called "db_infographic"
+
+# Importing database
+$ Import db_infographic.sql into your database
+
+# Edit configurations
+$ Inside includes/config.php, make sure the settings are correct for localhost, root, pw, and db 
+
+# htdocs or WWW
+$ Drag the folder into your htdocs or WWW folder 
+
+# Run through localhost
+$ Go through your localhost and find Baile_Joanna_HW3_Infographic
+```
+
+And you’re done!
 
 
 ## Authors
