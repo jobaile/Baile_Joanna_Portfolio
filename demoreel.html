@@ -38,16 +38,16 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="index">Home</a></li>
-                <li><a href="about" class="active">About</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
             <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
             <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
+            <li><a href="contact.html"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
@@ -67,14 +67,14 @@
 
         <div class="projectCon"> <!--Project Container-->
             <div class="back-text">
-                <a href="projects">GO BACK <i class="fas fa-angle-left"></i></a>
+                <a href="projects.html"> <i class="fas fa-angle-left"></i></a>
             </div>
             <div class="row" id="projectHeader" data-aos="fade-right">
-                <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+                <div class="col-12 col-md-6 col-lg-6">
                     <img v-bind:src="'images/work/'+ reelImgOne">
                 </div>
                 <div class="col-12 col-md-5">
-                    <h2> {{ pageTitleFive }} </h2>
+                    <h2> {{ pageTitleSix }} </h2>
                     <h3> {{ reelCategory }} </h3>
                     <h4> {{ reelDate }}</h4>
                     <p> {{ reelAbout }} </p>
@@ -82,28 +82,29 @@
             </div>
 
             <div class="row" id="projectContent" data-aos="fade-left">
-                <div class="col-12 col-lg-12">
-                    <div id="video-container">
-                        <!-- Video -->
-                        <video id="video" preload="metadata" poster="images/work/reel1.jpg">      
-                            <source src="video/video1.mp4" type="video/mp4">
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <div id="videoPlayer">
+                        <video id="headerVid" poster="images/work/reel2.jpg" alt="promotional video">
+                          <source src="video/movie1.mp4" type="video/mp4"/>
+                          <source src="video/movie1.ogg" type="video/ogg"/>
+                          <source src="video/movie1.wmv" type="video/wmv"/>
+                            Your browser does not support the video files! Please try another browser.
                         </video>
-                        <div id="video-controls-container">
-                            <div id="video-play-center" class="fa fa-play-circle-o fa-5x"></div>
-                            <div id="video-controls">
-                            <button type="button" id="play-pause" class="controls play fa fa-play"></button>
-                            <input type="range" id="seek-bar" value="0" class="controls">
-                            <button type="button" id="mute" class="controls fa fa-volume-off"></button>
-                            <input type="range" id="volume-bar" class="controls" min="0" max="1" step="0.1">
-                            <button type="button" id="full-screen" class="controls fa fa-arrows-alt"></button>
-                            </div>
+                    
+                        <div id="vidControls">
+                          <button id="rewind"><i class="fas fa-step-backward"></i></button>
+                          <button id="playPause"><i class="fas fa-play"></i></button>
+                          <input type="range" id="seek-bar" class="slider" value="0">
+                          <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
+                            <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></button></div>
                         </div>
+                        <!-- Video -->
                     </div>
-                </div>
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-6 order-lg-1">
                         <h3 class="text-center">{{ roletitle }}</h3>
                         <p> {{ reelDesc }} </p>
                 </div>
+            </div>
             </div>
         </div> <!--Project Container End-->
     </div>
@@ -120,7 +121,7 @@
                 <ul>
                     <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
                     <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="#"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
@@ -139,7 +140,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script> <!--AOS-->
     <script src="js/app.js"></script> <!--VUE Javascript-->
-    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
+    <script src="js/vid.js"></script> <!--Main Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
 
