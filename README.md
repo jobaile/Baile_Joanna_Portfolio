@@ -26,13 +26,13 @@ $ cd Desktop
 
 # Clone this repository into your local machine
 
-$ git clone https://github.com/jobaile/Baile_Joanna_HW3_infographic
+$ git clone https://github.com/jobaile/Baile_Joanna_Portfolio
 ```
 
 In your command line, go to where you installed the folder and enter the following lines to download needed packages and dependencies:
 
 ```
-cd Baile_J_Portfolio
+cd Baile_Joanna_Portfolio
 npm install
 npm start
 ```
