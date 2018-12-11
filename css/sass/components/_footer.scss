@@ -2,22 +2,27 @@
     margin-right: 0;
 }
 //Landing Footer
+footer#footerLanding {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 ul#landingSocial {
-    padding-top: 0;
+    display: inline-block;
+    padding: 0;
     margin-top: 2em;
   }
 
 #landingSocial li {
-    display: inline;
-    margin-left: 1.2em;
+    display: inline-block;
 }
   
 #landingSocial img {
     width: 50px;
-    padding: 0;
-    margin: 0;
-  }
+    margin: 0 auto;
+    margin-right: 5px;
+}
 
 #landingSocial a {
     padding: 0;
@@ -25,7 +30,6 @@ ul#landingSocial {
 
 #bottomSocial {
     margin-top: 1em;
-    margin-left: 4em;
 }
 
 #footerText{
@@ -34,35 +38,28 @@ ul#landingSocial {
     margin-bottom: 1.5em;
 }
 
+#footerPages p {
+    margin-left: 20px;
+}
 @media screen and (min-width: 375px) {
     ul#landingSocial {
-        padding: 4em;
-    }
-
-    #bottomSocial {
-        margin-left: 6em;
+        padding: 0
     }
 }
 
 @media screen and (min-width: 425px) {
     ul#landingSocial {
-        padding: 6em;
+        padding: 3em 0 2em 0;
         margin-top: 0;
     }
 
     div#bottomSocial {
         margin:0;
     }
-
-    #footerText{
-        float:right;
-        margin: 0;
-    }
 }
 
 @media screen and (min-width: 560px) {
     ul#landingSocial {
-        padding-left: 10em;
         margin-top: 1em;
     }  
     
@@ -71,31 +68,10 @@ ul#landingSocial {
     }
 }
 
-@media screen and (min-width: 768px) {
-    #footerLanding {
-        margin-top: 2em;
-    }
-
-    ul#landingSocial {
-        padding-left: 16.5em;
-    }
-}
-
-@media screen and (min-width: 888px) {
-    ul#landingSocial {
-        padding-left: 20em;
-    }
-}
-
-@media screen and (min-width: 940px) {
-    ul#landingSocial {
-        padding-left: 23em;
-    }
-}
 
 @media screen and (min-width: 1024px) {
     ul#landingSocial {
-        padding: 1em 0 1.5em 24em;
+        padding: 1em 0 1.5em 0;
     }
 
     #footerPages p {
@@ -103,24 +79,16 @@ ul#landingSocial {
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1430px) {
-    ul#landingSocial {
-        padding-left: 34em;
-    }
-}
-
-@media screen and (min-width: 1435px) {
-    ul#landingSocial {
-        padding-left: 37em;
-    }
-}
-
-
 @media screen and (min-width: 1440px) {
     ul#landingSocial {
-        padding: 0 0 0 37em;
+        padding: 0;
+    }
+
+    #footerPages p {
+        float: right;
     }
 }
+
 
 
 //Rest of the pages footer
@@ -134,8 +102,12 @@ footer#footerPages {
     color: $white;
 }
 
+#bottomSocial {
+    text-align: center;
+}
+
 #bottomSocial ul li {
-    display: inline;
+    display: inline-block;
   }
   
 #bottomSocial img {
@@ -148,7 +120,6 @@ footer#footerPages {
 #bottomSocial {
     position: relative;
     cursor: pointer;
-    z-index: 999;
 }
 
 
@@ -160,7 +131,6 @@ footer#footerPages {
 @media screen and (min-width: 425px) {
     #bottomSocial ul  {
         margin-top: 1em;
-        margin-left: 8em;
       }
 }
 
@@ -174,6 +144,7 @@ footer#footerPages {
     #footerLanding p{
         text-align: center;
         padding-right: 1em;
+        margin-top: 0;
     }
 }
 

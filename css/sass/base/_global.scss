@@ -1,15 +1,10 @@
 @import '_vars';
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 html body {
     background-color: $black;
 }
 body {
+    min-width: 320px;
     padding: 0;
     font-size: rem-calc(16);
     font-weight: 200;

@@ -9,7 +9,7 @@ This is the personal portfolio site for Joanna Baile
 - [NPM](https://www.npmjs.com/) - A package manager
 - [Vue JS](https://vue.com) - A JavaScript framework for user interfaces
 - [SASS](https://sass-lang.com/) - Makes the CSS easier to do!
-- [Animate on Scroll](https://michalsnik.github.io/aos/) - Makes some cool scrolling effects
+- [Animate on Scroll](https://michalsnik.github.io/aos/) - Makes some cool scrolling effects!
 
 
 ## Installing

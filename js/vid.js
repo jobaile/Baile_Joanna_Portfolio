@@ -21,13 +21,13 @@
 }
 
  function progressBar(){
-   //console.log("from progressBar");
+   console.log("from progressBar");
    var time = video.duration * (seekBar.value / 100);
    video.currentTime = time;
  }
 
  function rewindVid(){
-   //console.log("from rewind");
+   console.log("from rewind");
    video.currentTime -= 5;
  }
 
@@ -51,10 +51,6 @@
    volumeBar.value = 0;
    vidPlayer.volume = 0;
    }
- }
-
- function changeVolume() {
-   vidPlayer.volume = volumeBar.value;
  }
 
  function fullScreen(){ //This will give default video controls
