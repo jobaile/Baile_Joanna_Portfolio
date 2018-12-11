@@ -5,7 +5,9 @@ div.landing-text{
     position: absolute;
     z-index: 1;
     display: block;
+
   }
+
 
 div.landing-text h1 {
     text-align: center;
@@ -54,10 +56,17 @@ i {
     color: $white;
 }
 
+@media screen and (min-width: 425px) {
+    div.landing-text p {
+        margin-top: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     div.landing-text{
         padding-top: 10%;
     }
+    
     div.landing-text p{
         margin: 0;
     }

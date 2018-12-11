@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Joanna Baile | Project </title>
+    <title>Joanna Baile | Projects </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -38,16 +38,16 @@
     <div class="menu-overlay"> <!--This is the actual menu overlay-->
         <div class="stroke-hover">
             <ul id="navMenu">  <!--Menu-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="about" class="active">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </div>
         <ul id="navSocial">  <!--Social Links-->
             <li><a href="https://www.linkedin.com/in/joannabaile/" target="_blank"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
             <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-            <li><a href="contact.html"><img src="images/email.svg"  alt="Email"></a></li>
+            <li><a href="#"><img src="images/email.svg"  alt="Email"></a></li>
         </ul>
     </div>
     <!--Navigation End-->
@@ -62,15 +62,15 @@
 
     <!--ContentStarts Here-->
     <div id="app">
-    <!--Content Starts Here-->
+            <!--Content Starts Here-->
     <div class="container-flex">
-
-        <div class="projectCon"> <!--Project Container-->
+        <div class="projectCon" data-aos="fade-left"> <!--Project Container-->
             <div class="back-text">
                 <a href="projects"> <i class="fas fa-angle-left"></i></a>
             </div>
-            <div class="row" id="projectHeader" data-aos="fade-left">
-                <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+            <div class="projectHeader">
+                <div class="row">
+                <div class="col-12 col-md-5 offset-md-1">
                     <img v-bind:src="'images/work/'+ lsfcImgOne">
                 </div>
                 <div class="col-12 col-md-5">
@@ -79,33 +79,43 @@
                     <h4> {{ lsfcDate }}</h4>
                     <p> {{ lsfcAbout }} </p>
                 </div>
+                </div>
             </div>
 
-            <div class="row" id="projectContent" fade-right>
-                <div class="col-12 col-lg-6 order-lg-2">
+            <div class="projectContent" data-aos="fade-right">
+                <div class="row">
+                <div class="col-12 col-md-5 col-lg-5 order-md-2">
                     <img v-bind:src="'images/work/'+ lsfcImgTwo">
                 </div>
-                <div class="col-12 col-lg-6 order-lg-1">
+                <div class="col-12 col-md-5 col-lg-5 order-lg-1 offset-md-1">
                         <h3 class="text-center">{{ roletitle }}</h3>
                         <p> {{ lsfcDesc }} </p>
                 </div>
+                </div>
+            <div class="projBtn">
+                    <a href="https://jobaile.github.io/index.html" target="_blank" class="btn-effect" id="projectbtn">Organization Website</a>
             </div>
         </div> <!--Project Container End-->
     </div>
     <!--Content Ends Here-->
-</div> <!--VUE JS END-->
 
-    <!--ContentEnds Here-->
-</div>
+    </div> <!--VUE JS END-->
+    </div>
 
     <!--FOOTER-->
     <footer id="footerPages">
         <div class="row">
             <div class="col-12 col-md-4" id="bottomSocial">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/joannabaile/"><img src="images/linkedin.svg" alt="Linked In logo"></a></li>
-                    <li><a href="https://github.com/jobaile" target="_blank"><img src="images/github.svg" alt="Github logo"></a></li>
-                    <li><a href="contact.html"><img src="images/email.svg" alt="Email"></a></li>
+                    <li><a href="https://www.linkedin.com/in/joannabaile/">
+                        <object data="images/linkedin.svg" type="image/svg+xml" class="svg-graphic"></object>
+                    </a></li>
+                    <li><a href="https://github.com/jobaile" target="_blank">
+                        <object data="images/github.svg" type="image/svg+xml" class="svg-graphic"></object>
+                        </a></li>
+                    <li><a href="contact.html">
+                        <object data="images/email.svg" type="image/svg+xml" class="svg-graphic"></object>
+                        </a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-8" id="footerText">
@@ -114,7 +124,6 @@
         </div>
     </footer>
     <!--FOOTER END-->
-</div>
     <!--Content Ends Here-->
 
 
@@ -124,9 +133,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script> <!--AOS-->
     <script src="js/app.js"></script> <!--VUE Javascript-->
-    <script src="js/skill.js"></script> <!--Skillbar Javascript-->
     <script src="js/main.js"></script> <!--Main Javascript-->
     
-
 </body>
 </html>

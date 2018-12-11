@@ -1,6 +1,6 @@
 #particles-js {
     position: fixed;
-    width: 100%;
+    width:100vw;
     height: 100%;
     background: $black;
     z-index: -999;
@@ -8,7 +8,7 @@
 
 .hero #particles-js {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 300px;
     background: $black;
     z-index: -1;

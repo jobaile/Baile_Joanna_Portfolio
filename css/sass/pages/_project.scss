@@ -1,15 +1,68 @@
 .projectCon {
     background-color: $white;
 }
-#projectHeader {
-    padding: 1em;
-}
 
-#projectContent {
+.projectContent {
     background-color: $yellow;
-    padding: 1em;
+    padding: 2em;
 }
 
+.projectContent {
+    h3 {
+        margin-bottom: 1em;
+    }
+}
 #projectbtn {
     margin-bottom: 20px;
+}
+.projBtn {
+    text-align: center;
+}
+
+.projBtn a {
+    display: inline-block;
+}
+
+.projectHeader {
+    padding: 1em;
+}
+
+.projectHeader img {
+    margin-bottom: 2em;
+}
+
+
+.projectCon h2, h3, h4 {
+    font-family: $primary-font;
+    text-align: center;
+}
+
+.projectCon h2 {
+    font-family: $primary-font;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projectCon h3 {
+    font-family: $primary-font;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.projectCon h4 {
+    font-family: $primary-font;
+    font-weight: bold;
+}
+
+.projectCon p {
+    font-family: $secondary-font;
+}
+
+.projectContent img {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 425px){
+    
 }

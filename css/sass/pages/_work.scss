@@ -29,7 +29,7 @@ main {
 
 @media screen and (min-width: 768px){
     .workSection ul {
-        padding-left: 2em;
+        padding-left: 4em;
     }
     
     .workSection ul li img {
@@ -44,9 +44,9 @@ main {
     }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1435px){
     .workSection ul {
-        padding-left: 8em;
+        padding-left: 10em;
     }
 }
 
@@ -77,28 +77,4 @@ div.back-text i {
 
 div.back-text i:hover {
     color: $yellow;
-}
-
-.projectCon h2, h3, h4 {
-    font-family: $primary-font;
-    text-align: center;
-}
-
-.projectCon h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.projectCon h3 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.projectCon h4 {
-    font-weight: bold;
-}
-
-.projectCon p {
-    font-family: $secondary-font;
 }
