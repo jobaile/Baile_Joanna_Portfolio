@@ -10,7 +10,7 @@ if(empty($_POST['name'])
         exit;
     }
 
-$to = "joannabaile@gmail.com";
+$to = "me@joannabaile.com";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
