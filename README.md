@@ -1,7 +1,7 @@
 # Joanna Baile's Portfolio
 This is the personal portfolio site for Joanna Baile
 
-[Check out the site](http://joannabaile.org/)
+[Check out the site](http://joannabaile.com/)
 
 
 ## Built with
